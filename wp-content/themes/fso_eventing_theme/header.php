@@ -25,7 +25,7 @@
            
             <?php 
                 wp_nav_menu( array(
-                    'menu' => 'tprimarynav',
+                    'menu' => 'primarynav',
                     'depth' => 2,
                     'container' => false,
                     'menu_class' => 'nav',
