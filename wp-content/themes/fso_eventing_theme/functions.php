@@ -32,6 +32,37 @@ if (function_exists('add_theme_support')) {
   add_theme_support('post-thumbnails');
 }
 
+function fso_widgets_init() {
+    register_sidebar( array(
+        'name' => __( 'News Sidebar', 'fso-eventing' ),
+        'id' => 'news-sidebar',
+        'description' => __( 'Widget area.', 'fso-eventing' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s ">',
+    'after_widget'  => '</li>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Horses Sidebar', 'fso-eventing' ),
+        'id' => 'horses-sidebar',
+        'description' => __( 'Widget area.', 'fso-eventing' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s ">',
+    'after_widget'  => '</li>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+    ) );
+register_sidebar( array(
+        'name' => __( 'Footer', 'fso-eventing' ),
+        'id' => 'footer-wigets',
+        'description' => __( 'Widget area.', 'fso-eventing' ),
+        'before_widget' => '<li id="%1$s" class="widget %2$s col-xs-12 col-sm-3 col-md-3">',
+    'after_widget'  => '</li>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+    ) );
+}
+add_action( 'widgets_init', 'fso_widgets_init' );
+
 /*
  * Hide WP Version
  */
