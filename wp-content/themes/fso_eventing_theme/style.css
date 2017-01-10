@@ -37,3 +37,14 @@ Text Domain: fso-eventing
 .fso-page {
 	padding: 0 50px;
 }
+
+.fso-footer {
+    background-color: #063257;
+    border-color: #e7e7e7;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.hero-img {
+	background-size: cover;
+	background-position: center; 
+}
