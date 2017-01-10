@@ -51,7 +51,11 @@
 
 	</div>
 		<aside class="sidebar col-xs-12 col-sm-4 col-md-3">
-		<?php // SIDEBAR ?>
+			<?php if ( is_active_sidebar( 'news-sidebar' ) ) : ?>
+				<div id="primary-sidebar" class="c widget-area panel" role="complementary">
+					<?php dynamic_sidebar( 'news-sidebar' ); ?>
+				</div>
+			<?php endif; ?>
 		</aside>
 </main>
 </div>
