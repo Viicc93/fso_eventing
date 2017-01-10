@@ -7,3 +7,21 @@ Description: Theme for Eventing Company
 Version: 0.1
 Text Domain: fso-eventing
 */
+
+#fso-wrapper {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+
+.post .thumbnail {
+	width: 40%;
+	float: left;
+}
+.post .content {
+	width: 60%;
+	float: left;
+}
+
+.post {
+	clear: both;
+}
