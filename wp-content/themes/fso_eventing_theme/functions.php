@@ -28,6 +28,10 @@ function fso_setup() {
 }
 add_action( 'after_setup_theme', 'fso_setup' );
 
+if (function_exists('add_theme_support')) {
+  add_theme_support('post-thumbnails');
+}
+
 /*
  * Hide WP Version
  */
