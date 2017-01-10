@@ -1,4 +1,5 @@
 <?php 
+require_once('wp_bootstrap_navwalker.php');
 
 function fso_enqueue_scripts() {
     // Add bootstrap, fontawsome, css, js and more
