@@ -25,3 +25,15 @@ Text Domain: fso-eventing
 .post {
 	clear: both;
 }
+
+.navbar-default {
+    background-color: #063257;
+    border-color: #e7e7e7;
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    color: #EEE;
+    background-color:#883939;
+}
+.fso-page {
+	padding: 0 50px;
+}
