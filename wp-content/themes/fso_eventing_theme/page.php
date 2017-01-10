@@ -5,6 +5,10 @@
 	<?php if ( have_posts() ) : ?>
 
 	<?php	while ( have_posts() ) : the_post(); ?>
+		<?php if ( has_post_thumbnail() ) : ?>
+			<div class="hero-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); width: 100%; height: 400px;">
+			</div> 
+		<?php endif; ?>
 
 					<article class="fso-page panel">
 						<h1><?php the_title(); ?></h1>
