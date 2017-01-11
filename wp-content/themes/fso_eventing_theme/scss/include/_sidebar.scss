@@ -1,3 +1,10 @@
+.sidebar {
+  ul {
+    li {
+      list-style-type: none;
+    }
+  }
+}
 .sidebar-header {
   background-color: $main-color;
   height: 30px;
@@ -7,4 +14,16 @@
     color: $secondary-heading-color;
       padding: $space-xxs;
   }
+}
+.sidebar-content {
+  padding: $space-xs;
+}
+
+.widget {
+  a {
+    color: $link-color;
+  }
+}
+.widget-title {
+  font-size: $heading-sm;
 }

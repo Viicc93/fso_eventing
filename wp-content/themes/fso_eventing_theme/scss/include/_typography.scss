@@ -8,5 +8,7 @@ p {
 }
 
 @media all and (min-width: $screen-sm) {
-
+  p {
+    font-size: $text-lg;
+  }
 }

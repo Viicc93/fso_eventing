@@ -29,6 +29,10 @@ p {
   p {
     font-size: 12px; } }
 
+@media all and (min-width: 710px) {
+  p {
+    font-size: 16px; } }
+
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +41,9 @@ p {
 #fso-wrapper {
   max-width: 1280px;
   margin: 0 auto; }
+
+.main-content {
+  overflow: auto; }
 
 .hero-img {
   background-size: cover;
@@ -76,13 +83,27 @@ p {
 
 @media all and (min-width: 460px) {
   .post {
-    clear: both; }
+    overflow: hidden;
+    clear: both;
+    margin-bottom: 25px; }
     .post .thumbnail {
       width: 40%;
       float: left; }
     .post .content {
       width: 60%;
-      float: left; } }
+      float: left;
+      padding-left: 5px; }
+    .post .read-more {
+      float: right;
+      padding-bottom: 5px;
+      padding-right: 5px; } }
+
+@media all and (min-width: 710px) {
+  .read-more {
+    font-size: 16px; } }
+
+.sidebar ul li {
+  list-style-type: none; }
 
 .sidebar-header {
   background-color: #063257;
@@ -93,8 +114,18 @@ p {
     color: #eee;
     padding: 5px; }
 
+.sidebar-content {
+  padding: 10px; }
+
+.widget a {
+  color: #883939; }
+
+.widget-title {
+  font-size: 14px; }
+
 .fso-footer {
   background-color: #063257;
   border-color: #777;
   border-radius: 3px;
-  overflow: hidden; }
+  overflow: hidden;
+  color: #eee; }

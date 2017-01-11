@@ -18,12 +18,14 @@
 }
 .read-more {
 	font-size: $text-sm;
-	color: $secondary-color;
+	color: $link-color;
 }
 
 @media all and (min-width: $screen-xs) {
 	.post {
+		overflow: hidden;
 		clear: both;
+		margin-bottom: $space-sm;
 		.thumbnail {
 			width: 40%;
 			float: left;
@@ -31,10 +33,18 @@
 		 .content {
 			width: 60%;
 			float: left;
+			padding-left: $space-xxs;
+		}
+		.read-more {
+			float: right;
+			padding-bottom: $space-xxs;
+			padding-right: $space-xxs;
 		}
 	}
 }
 
 @media all and (min-width: $screen-sm) {
-
+	.read-more {
+		font-size: $text-lg;
+	}
 }

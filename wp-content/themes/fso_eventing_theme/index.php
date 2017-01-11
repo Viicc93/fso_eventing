@@ -4,7 +4,7 @@
 <div class="main-content">
 
 	<?php if ( have_posts() ) : ?>
-	<div class="posts col-xs-12 col-sm-8 col-md-9">
+	<div class="posts col-xs-12 col-sm-12 col-md-8 col-lg-8">
 
 	<?php	while ( have_posts() ) : the_post(); ?>
 
@@ -52,17 +52,19 @@
 		<?php endif; ?>
 
 	</div>
-		<aside class="sidebar col-xs-12 col-sm-4 col-md-3">
+		<aside id="news-sidebar" class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
 			<?php if ( is_active_sidebar( 'news-sidebar' ) ) : ?>
-				<header class="sidebar-header">
-					<h1 class="sidebar-title">NEWS</h1>
-				</header>
-				<div id="primary-sidebar" class="c widget-area panel" role="complementary">
-					<?php dynamic_sidebar( 'news-sidebar' ); ?>
-				</div>
+					<header class="sidebar-header">
+						<h1 class="sidebar-title">NEWS</h1>
+					</header>
+					<div class="sidebar-content">
+						<ul class="c widget-area" role="complementary">
+							<?php dynamic_sidebar( 'news-sidebar' ); ?>
+						</ul>
+					</div>
 			<?php endif; ?>
 		</aside>
-</main>
-</div>
+	</div>
+
 
 <?php get_footer(); ?>

@@ -17,7 +17,7 @@ $main-heading-color: $main-color;
 $secondary-heading-color: #eee;
 $main-text-color: #000;
 $secondary-text-color: #eee;
-$link-color: #000;
+$link-color: $secondary-color;
 $link-hover-color: #eee;
 
 // size
@@ -45,6 +45,6 @@ $space-lg: 50px;
 *  BREAKPOINTS
 */
 $screen-xs: 460px;
-$screen-sm: 780px;
+$screen-sm: 710px;
 $screen-md: 1030px;
 $screen-lg: 1280px;
