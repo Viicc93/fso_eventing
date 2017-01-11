@@ -2,9 +2,11 @@
 	border-bottom: 1px solid #eee;
 	margin-bottom: $space-xs;
 }
+.posts {
+	padding-top: $space-sm;
+}
 .post-title {
 	margin: 0;
-	font-size: $heading-sm;
 	a {
 		color: $main-heading-color;
 	}
