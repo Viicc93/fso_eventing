@@ -1,14 +1,24 @@
 p {
   font-size: $text-sm;
 }
+h1, h2, h3 ,h4, h5, h6 {
+  font-size: $heading-sm;
+  color: $main-color;
+}
 @media all and (min-width: $screen-xs) {
   p {
     font-size: $text-md;
+  }
+  h1, h2, h3 ,h4, h5, h6 {
+    font-size: $heading-md;
   }
 }
 
 @media all and (min-width: $screen-sm) {
   p {
     font-size: $text-lg;
+  }
+  h1, h2, h3 ,h4, h5, h6 {
+    font-size: $heading-lg;
   }
 }
