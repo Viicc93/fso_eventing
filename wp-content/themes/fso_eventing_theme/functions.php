@@ -65,6 +65,26 @@ register_sidebar( array(
 }
 add_action( 'widgets_init', 'fso_widgets_init' );
 
+
+function fso_init() {
+  // Create Custom Post Type for horses
+    $args = array(
+      'label' => __('Horses', 'fso-eventing'),
+        'public' => true,
+        'show_ui' => true,
+        'capability_type' => 'post',
+        'hierarchical' => false,
+        'rewrite' => array('slug' => 'fso-horses'),
+        'query_var' => true,
+        'menu_icon' => 'dashicons-carrot',
+        'supports' => array(
+            'title',
+            'thumbnail',)
+        );
+    register_post_type( 'fso-horses', $args );
+}
+add_action( 'init', 'fso_init' );
+
 /*
  * Hide WP Version
  */
