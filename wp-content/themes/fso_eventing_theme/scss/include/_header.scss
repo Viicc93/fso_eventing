@@ -1,4 +1,12 @@
+/* The animation code */
+@keyframes example {
+    from {width: 150%;}
+    to {width: 100;}
+}
+
 .hero-img {
 	background-size: cover;
 	background-position: center;
+	animation-name: example;
+	animation-duration: 2s;
 }
