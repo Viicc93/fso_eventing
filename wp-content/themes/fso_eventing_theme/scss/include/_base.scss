@@ -10,3 +10,23 @@
 .main-content {
 	overflow: auto;
 }
+#searchform {
+	#searchsubmit {
+		background: $main-color;
+		color: #eee;
+		border: none;
+		padding: $space-xxs;
+		margin-left: -7px;
+		border-radius: 0 4px 4px 0;
+		width: 20%;
+	}
+	#s {
+		height: 30px;
+		width: 80%;
+		border: 1px solid $main-color;
+		border-radius: 4px 0 0 4px;
+	}
+  .screen-reader-text {
+		display: none;
+	}
+}
