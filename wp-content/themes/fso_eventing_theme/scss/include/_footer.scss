@@ -1,7 +1,11 @@
 .fso-footer {
     background-color: $main-color;
     border-color: $border-color;
-    border-radius: 3px;
+    border-radius: 0 0 4px 4px;
     overflow: hidden;
     color: #eee;
+}
+.copyright {
+  text-align: center;
+  color: $grey;
 }
