@@ -1,0 +1,50 @@
+/*
+* COLORS
+*/
+$grey: #777;
+/*
+* BASE
+*/
+$main-color: #063257;
+$secondary-color: #883939;
+$border-color: $grey;
+
+/*
+* TEXT
+*/
+//color
+$main-heading-color: $main-color;
+$secondary-heading-color: #eee;
+$main-text-color: #000;
+$secondary-text-color: #eee;
+$link-color: #000;
+$link-hover-color: #eee;
+
+// size
+$heading-sm: 14px;
+$heading-md: 24px;
+$heading-lg: 30px;
+$text-sm: 10px;
+$text-md: 12px;
+$text-lg: 16px;
+
+
+// family
+
+
+/*
+* MARGIN PADDING
+*/
+$space-xxs: 5px;
+$space-xs: 10px;
+$space-sm: 25px;
+$space-md: 35px;
+$space-lg: 50px;
+
+/*
+*  BREAKPOINTS
+*/
+$screen-xs: 460px;
+$screen-sm: 780px;
+$screen-md: 1030px;
+$screen-lg: 1280px;

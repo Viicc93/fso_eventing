@@ -1,0 +1,10 @@
+.sidebar-header {
+  background-color: $main-color;
+  height: 30px;
+  border-radius: 3px 3px 0 0;
+  .sidebar-title {
+    font-size: $heading-sm;
+    color: $secondary-heading-color;
+      padding: $space-xxs;
+  }
+}

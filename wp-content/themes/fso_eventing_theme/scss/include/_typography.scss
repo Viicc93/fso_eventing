@@ -1,0 +1,12 @@
+p {
+  font-size: $text-sm;
+}
+@media all and (min-width: $screen-xs) {
+  p {
+    font-size: $text-md;
+  }
+}
+
+@media all and (min-width: $screen-sm) {
+
+}

@@ -1,0 +1,40 @@
+.post, .hero-post {
+	border-bottom: 1px solid #eee;
+	margin-bottom: $space-xs;
+}
+.post-title {
+	margin: 0;
+	font-size: $heading-sm;
+	a {
+		color: $main-heading-color;
+	}
+}
+.thumbnail {
+	margin-bottom: $space-xxs;
+}
+.post-date {
+		margin-bottom: 0;
+		color: $grey;
+}
+.read-more {
+	font-size: $text-sm;
+	color: $secondary-color;
+}
+
+@media all and (min-width: $screen-xs) {
+	.post {
+		clear: both;
+		.thumbnail {
+			width: 40%;
+			float: left;
+		}
+		 .content {
+			width: 60%;
+			float: left;
+		}
+	}
+}
+
+@media all and (min-width: $screen-sm) {
+
+}
