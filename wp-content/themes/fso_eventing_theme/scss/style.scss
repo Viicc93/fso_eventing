@@ -1,9 +1,19 @@
 /*
 Theme Name: FSO Eventing Theme
-Theme URI: 
+Theme URI:
 Author: Victoria Johansson
-Author URI: 
+Author URI:
 Description: Theme for Eventing Company
 Version: 0.1
 Text Domain: fso-eventing
 */
+
+@import "include/variables";
+@import "include/typography";
+@import "include/base";
+@import "include/header";
+@import "include/navigation";
+@import "include/page";
+@import "include/post";
+@import "include/sidebar";
+@import "include/footer";
