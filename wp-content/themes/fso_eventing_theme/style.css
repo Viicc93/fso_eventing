@@ -23,11 +23,13 @@ Text Domain: fso-eventing
 *  BREAKPOINTS
 */
 p {
-  font-size: 10px; }
+  font-size: 10px;
+  font-family: 'Roboto', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
-  color: #063257; }
+  color: #063257;
+  font-family: 'Oswald', sans-serif; }
 
 @media all and (min-width: 460px) {
   p {
@@ -141,6 +143,9 @@ h1, h2, h3, h4, h5, h6 {
   .read-more {
     font-size: 16px; } }
 
+b {
+  margin: 20px; }
+
 .sidebar ul li {
   list-style-type: none; }
 
@@ -179,6 +184,10 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 0 0 4px 4px;
   overflow: hidden;
   color: #eee; }
+  .fso-footer li {
+    list-style-type: none; }
+  .fso-footer h2.widget-title {
+    color: #eee; }
 
 .copyright {
   text-align: center;
