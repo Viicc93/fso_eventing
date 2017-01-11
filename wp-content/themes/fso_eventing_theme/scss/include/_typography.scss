@@ -1,9 +1,11 @@
 p {
   font-size: $text-sm;
+  font-family: 'Roboto', sans-serif;
 }
 h1, h2, h3 ,h4, h5, h6 {
   font-size: $heading-sm;
   color: $main-color;
+  font-family: 'Oswald', sans-serif;
 }
 @media all and (min-width: $screen-xs) {
   p {
