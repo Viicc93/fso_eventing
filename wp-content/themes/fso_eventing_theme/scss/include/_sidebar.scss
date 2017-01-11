@@ -7,12 +7,12 @@
 }
 .sidebar-header {
   background-color: $main-color;
-  height: 30px;
+  height: 35px;
   border-radius: 3px 3px 0 0;
   .sidebar-title {
     font-size: $heading-sm;
     color: $secondary-heading-color;
-      padding: $space-xxs;
+    padding: $space-xs;
   }
 }
 .sidebar-content {
@@ -26,4 +26,18 @@
 }
 .widget-title {
   font-size: $heading-sm;
+}
+@media all and (min-width: $screen-sm) {
+  .widget-title {
+    font-size: $heading-md;
+  }
+}
+@media all and (min-width: $screen-md) {
+  .sidebar-header {
+    height: 50px;
+    .sidebar-title {
+      font-size: $heading-md;
+      padding: $space-xs;
+    }
+  }
 }
