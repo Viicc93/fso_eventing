@@ -3,10 +3,20 @@
 <div class="main-content">
 
 	<?php	while ( have_posts() ) : the_post(); ?>
+		<?php 	$filename = get_the_post_thumbnail_url();
+			$size = getimagesize($filename);
 
-<input type="button" value=" <?php _e('All Horses') ?>" onclick="history.back(-1)" />
-					<article class="fso-page panel">
-						<div class="thumbnail">
+			$image_size = "horizontal-image";
+			if ($size[0] < $size[1]) {
+				$image_size = "vertical-image";
+			}
+
+			?>
+
+					<button class="fso-button" value="" onclick="history.back(-1)" /><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
+
+				<article class="fso-page horse panel">
+						<div class="thumbnail single-img  <?php echo  $image_size; ?>">
 							<?php the_post_thumbnail();?>
 						</div>
 						<h1><?php the_title(); ?></h1>

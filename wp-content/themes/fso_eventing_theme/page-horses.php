@@ -34,8 +34,10 @@
 
 
   					<article class="post">
-  							<div class="thumbnail">
-  								<?php the_post_thumbnail();?>
+  							<div class="thumbnail" >
+									<div class="img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+
+									</div>
   							</div>
   							<div class="content">
 

@@ -26,7 +26,7 @@
 					<article class="post">
 						<?php if ( has_post_thumbnail() ) : ?>
 							<div class="thumbnail">
-								<?php the_post_thumbnail();?>
+								<div class="img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
 							</div>
 							<div class="content">
 						<?php else: ?>
