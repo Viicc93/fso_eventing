@@ -7,7 +7,7 @@
 
 	<?php	while ( have_posts() ) : the_post(); ?>
 		<?php if ( has_post_thumbnail() ) : ?>
-			<div class="hero-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); width: 100%; height: 400px;">
+			<div class="hero-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 			</div>
 		<?php endif; ?>
 
