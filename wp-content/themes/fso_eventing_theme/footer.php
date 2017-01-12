@@ -6,7 +6,7 @@
 	<?php endif; ?>
 </footer>
 <div class="copyright">
-	<p><i>Copyright 2017</i></p>
+	<p><i> &copy; Copyright 2017</i></p>
 </div>
 </div>
 </body>
