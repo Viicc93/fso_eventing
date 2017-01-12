@@ -69,14 +69,14 @@ add_action( 'widgets_init', 'fso_widgets_init' );
 function fso_init() {
   // Create Custom Post Type for horses
   $labels = array(
-        'name' =>  __('Horses', 'fso-eventing'),
-        'singular_name' =>  __('Horse', 'fso-eventing'),
+        'name' =>  _x('Horses', 'Horses',  'fso-eventing'),
+        'singular_name' =>  _x('Horse', 'Horse',  'fso-eventing'),
         'add_new' =>  __('Add New', 'fso-eventing'),
         'add_new_item' =>  __('Add New Horse', 'fso-eventing'),
         'edit_item' =>  __('Edit Horse', 'fso-eventing'),
 );
     $args = array(
-        'label' => $labels,
+        'label' => __('Horses', 'fso-eventing'),
         'public' => true,
         'show_ui' => true,
         'capability_type' => 'post',
