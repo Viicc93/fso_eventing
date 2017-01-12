@@ -10,6 +10,12 @@
 
 
 @media all and (min-width: $screen-xs) {
+  .horse-sm {
+    .content {
+      padding-top: 25px;
+      padding-left: 20px;
+    }
+  }
   .horse-tags {
 
     p {

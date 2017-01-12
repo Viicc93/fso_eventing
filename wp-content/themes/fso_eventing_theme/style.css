@@ -229,6 +229,9 @@ a {
   font-size: 12px; }
 
 @media all and (min-width: 460px) {
+  .horse-sm .content {
+    padding-top: 25px;
+    padding-left: 20px; }
   .horse-tags p b {
     font-size: 14px; } }
 
