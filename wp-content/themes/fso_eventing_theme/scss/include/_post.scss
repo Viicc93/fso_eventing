@@ -50,3 +50,18 @@
 		font-size: $text-lg;
 	}
 }
+
+@media all and (min-width: $screen-md) {
+	.latest-news {
+		width: 80%;
+		margin: $space-sm auto;
+	}
+	.post-wide {
+		.thumbnail {
+			width: 30%;
+		}
+		 .content {
+			width: 70%;
+		}
+	}
+}

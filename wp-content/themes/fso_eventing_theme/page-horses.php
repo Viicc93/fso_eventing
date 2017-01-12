@@ -63,6 +63,26 @@
   		<?php endif; ?>
     </div>
 
+		<aside id="horses-sidebar" class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<?php //if ( is_active_sidebar( 'horses-sidebar' ) ) : ?>
+					<header class="sidebar-header">
+						<h1 class="sidebar-title">HORSES</h1>
+					</header>
+					<div class="sidebar-content">
+						<ul class="c widget-area" role="complementary">
+							<?php dynamic_sidebar( 'horses-sidebar' ); ?>
+						</ul>
+					</div>
+			<?php //endif; ?>
+			<div class="all-horses">
+				<h2><?php _e('All Horses', 'fso-eventing') ?></h2>
+				<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
+					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+				<?php endwhile;  ?>
+
+			</div>
+		</aside>
+
 
 
 </div>

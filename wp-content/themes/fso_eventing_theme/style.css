@@ -31,6 +31,9 @@ h1, h2, h3, h4, h5, h6 {
   color: #063257;
   font-family: 'Oswald', sans-serif; }
 
+a {
+  color: #883939; }
+
 @media all and (min-width: 460px) {
   p {
     font-size: 12px; }
@@ -85,6 +88,11 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
   animation-name: example;
   animation-duration: 2s; }
+
+#logo {
+  width: 200px;
+  height: 200px;
+  background-size: cover; }
 
 .navbar.navbar-default {
   background-color: #063257;
@@ -143,8 +151,32 @@ h1, h2, h3, h4, h5, h6 {
   .read-more {
     font-size: 16px; } }
 
-b {
-  margin: 20px; }
+@media all and (min-width: 990px) {
+  .latest-news {
+    width: 80%;
+    margin: 20px auto; }
+  .post-wide .thumbnail {
+    width: 30%; }
+  .post-wide .content {
+    width: 70%; } }
+
+.horse-tags p b {
+  color: #063257;
+  font-size: 12px; }
+
+@media all and (min-width: 460px) {
+  .horse-tags p b {
+    font-size: 14px; } }
+
+@media all and (min-width: 710px) {
+  .horse-tags {
+    width: 100%;
+    height: 50px; }
+    .horse-tags p {
+      float: left;
+      margin: 5px; }
+      .horse-tags p b {
+        font-size: 16px; } }
 
 .sidebar ul li {
   list-style-type: none; }

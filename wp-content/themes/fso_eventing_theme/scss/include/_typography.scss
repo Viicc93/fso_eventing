@@ -7,6 +7,9 @@ h1, h2, h3 ,h4, h5, h6 {
   color: $main-color;
   font-family: 'Oswald', sans-serif;
 }
+a {
+  color: $link-color;
+}
 @media all and (min-width: $screen-xs) {
   p {
     font-size: $text-md;
