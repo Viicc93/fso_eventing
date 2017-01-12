@@ -6,8 +6,8 @@
 	<?php if ( have_posts() ) : ?>
 
   	<?php	while ( have_posts() ) : the_post(); ?>
-      <div class="hero-img" >
-        <?php ?>
+      <div class="hero-img-slider" >
+        <?php wd_slider(2); ?>
       </div>
 
 
