@@ -11,8 +11,25 @@
 		color: $main-heading-color;
 	}
 }
+
+.single-img {
+	&.thumbnail {
+		margin: auto;
+    &.horizontal-image {
+      max-width: 640px;
+    }
+    &.vertical-image {
+      max-width: 280px;
+    }
+	}
+}
+
 .thumbnail {
 	margin-bottom: $space-xxs;
+	.img {
+		height: 250px;
+		background-size: cover;
+	}
 }
 .post-date {
 		margin-bottom: 0;
@@ -31,6 +48,9 @@
 		.thumbnail {
 			width: 40%;
 			float: left;
+			.img {
+				height:200px;
+			}
 		}
 		 .content {
 			width: 60%;
@@ -46,12 +66,22 @@
 }
 
 @media all and (min-width: $screen-sm) {
+	.thumbnail {
+		.img {
+			height: 250px;
+		}
+	}
 	.read-more {
 		font-size: $text-lg;
 	}
 }
 
 @media all and (min-width: $screen-md) {
+	.thumbnail {
+		.img {
+			height: 150px;
+		}
+	}
 	.latest-news {
 		width: 80%;
 		margin: $space-sm auto;

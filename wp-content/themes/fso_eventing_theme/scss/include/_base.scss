@@ -30,3 +30,11 @@
 		display: none;
 	}
 }
+.fso-button {
+	background: $main-color;
+	color: #eee;
+	border: none;
+	padding: $space-xs;
+	border-radius: 4px;
+	width: 75px;
+}
