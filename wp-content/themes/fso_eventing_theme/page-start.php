@@ -7,19 +7,15 @@
 
   	<?php	while ( have_posts() ) : the_post(); ?>
       <div class="hero-img" >
-        <?php wd_slider(2); ?>
+        <?php ?>
       </div>
 
 
   				<article class="page">
-  					<div class="content">
-  							<h2 class ="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+  					<div class="content start-page-content">
   							<div class=""><?php the_content(); ?></div>
   					</div>
   				</article>
-
-          <div class="hero-img" style="background-image: url('<?php the_field('image_link_horses'); ?>'); width: 100%; height: 400px;">
-          </div>
 
 
   	<?php endwhile; else : ?>
@@ -28,19 +24,18 @@
 
 		<?php endif; ?>
 
-    <div class="latest-news">
-      <?php include 'latest-news.php'; ?>
-    </div>
-
+		<div class="latest-news">
+				<h1><?php _e('LATEST NEWS'); ?></h1>
+			<?php include 'latest-news.php'; ?>
+		</div>
 
     <?php	while ( have_posts() ) : the_post(); ?>
 
-            <div class="hero-img" style="background-image: url('<?php the_field('image_link_horses'); ?>'); width: 100%; height: 400px;">
-              <h1><?php _e('SALES HORSES', 'fso-eventing'); ?></h1>
+            <div class="image-link" style="background-image: url('<?php the_field('image_link_background'); ?>');">
+              <a href="<?php the_field('image_link_url');?>"><h1><?php the_field('image_link_text');?></h1></a>
             </div>
 
     <?php endwhile; ?>
-
 	</div>
 
 
