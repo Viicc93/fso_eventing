@@ -1,8 +1,29 @@
 <?php /* Template Name: Horses */ ?>
 <?php get_header(); ?>
+	<?php
+	// GET HORSES WITH WP QUERY
+		$horse_args = array ( 'post_type' =>'fso-horses',
+													'meta_query' => array(
+																				array(
+																					'key'     => 'category',
+																					'value'   => 'our',
+																					'compare' => 'IN',
+																					),
+												));
+		$horses = new WP_Query($horse_args);
 
-<div class="main-content">
-
+		$sale_args = array ( 'post_type' =>'fso-horses',
+		'meta_query' => array(
+									array(
+										'key'     => 'category',
+										'value'   => 'sale',
+										'compare' => 'IN',
+										),
+	));
+		$horses_for_sale = new WP_Query($sale_args);
+	?>
+	<div class="main-content">
+	<!-- PAGE CONTENT FOR HORSE PAGE -->
 	<?php if ( have_posts() ) : ?>
 
 	<?php	while ( have_posts() ) : the_post(); ?>
@@ -11,8 +32,8 @@
 			</div>
 		<?php endif; ?>
 
-					<article class="fso-page panel">
-						<h1><?php the_title(); ?></h1>
+					<article class="panel h-entry">
+						<h1 class="p-name"><?php the_title(); ?></h1>
 						<div class=""><?php the_content(); ?></div>
 					</article>
 
@@ -22,67 +43,63 @@
 
 		<?php endif; ?>
 
-    <?php
-      $args = array ( 'post_type' =>'fso-horses');
-      $horses = new WP_Query($args);
-    ?>
+		<div class="posts horses h-entry col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<!-- HORSES -->
     <?php if ( $horses->have_posts() ) : ?>
-  	<div class="posts col-xs-12 col-sm-12 col-md-8 col-lg-8">
+				<h2><?php _e('Our horses', 'fso-eventing'); ?></h2>
+  		<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
 
-  	<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
-
-
-
-  					<article class="post horse-sm">
-  							<div class="thumbnail" >
-									<div class="img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-
-									</div>
-  							</div>
-  							<div class="content">
-
-  							<h2 class ="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-
-  							<div class="">
-                   <p><b class="horse-tag"><?php _e('Year: ', 'fso-eventing'); ?></b><?php the_field('year'); ?></p>
-                   <p><b class="horse-tag"><?php _e('Height: ', 'fso-eventing'); ?></b><?php the_field('height'); ?></p>
-                   <p><b class="horse-tag"><?php _e('Discipline: ', 'fso-eventing'); ?></b><?php the_field('discipline'); ?></p>
-                   <p><b class="horse-tag"><?php _e('Level: ', 'fso-eventing'); ?></b><?php the_field('level'); ?></p>
-
-                 </div>
-  							<div class="exc-footer">
-  								<a class="read-more" href="<?php the_permalink(); ?>">Read More &raquo;</a>
-  							</div>
-  						</div>
-  					</article>
-
+					<?php include 'horse.php'; ?>
 
   			<?php endwhile; else : ?>
-
-
-  			<p><?php _e( 'No Posts' , 'fso-eventing'); ?></p>
+  			<p><?php _e( 'No horses at the moment...' , 'fso-eventing'); ?></p>
 
   		<?php endif; ?>
+
+			<!-- HORSES FOR SALE -->
+			<?php if ( $horses_for_sale->have_posts() ) : ?>
+					<h2><?php _e('Horses for sale', 'fso-eventing'); ?></h2>
+				<?php	while ( $horses_for_sale->have_posts() ) : $horses_for_sale->the_post(); ?>
+
+						<?php include 'horse.php'; ?>
+
+					<?php endwhile; else : ?>
+						<div class="not-found">
+							<p><?php _e( 'No sale horses at the moment...' , 'fso-eventing'); ?></p>
+						</div>
+
+				<?php endif; ?>
+
     </div>
 
 		<aside id="horses-sidebar" class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
 
 					<header class="sidebar-header">
-						<h1 class="sidebar-title">HORSES</h1>
+						<h1 class="sidebar-title"><?php _e('HORSES'); ?></h1>
 					</header>
 					<?php if ( is_active_sidebar( 'horses-sidebar' ) ) : ?>
 					<div class="sidebar-content">
 						<ul class="c widget-area" role="complementary">
 							<?php dynamic_sidebar( 'horses-sidebar' ); ?>
 						</ul>
-					</div>
+
 			<?php endif; ?>
 			<div class="all-horses">
-				<h2><?php _e('All Horses', 'fso-eventing') ?></h2>
-				<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
-					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-				<?php endwhile;  ?>
-
+				<ul class="wiget_area">
+					<li class="c wiget widget_archive">
+						<h2 class="widget-title"><?php _e('Our Horses', 'fso-eventing') ?></h2>
+							<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
+								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+							<?php endwhile;  ?>
+						</li>
+						<li class="c wiget widget_archive">
+							<h2 class="widget-title"><?php _e('Horses for sale', 'fso-eventing') ?></h2>
+								<?php	while ( $horses_for_sale->have_posts() ) : $horses_for_sale->the_post(); ?>
+									<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
+								<?php endwhile;  ?>
+							</li>
+				</ul>
+			</div>
 			</div>
 		</aside>
 
