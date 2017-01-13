@@ -148,6 +148,15 @@ a {
     font-weight: bold;
     padding: 60px 0; }
 
+.not-found {
+  width: 100%;
+  height: 500px; }
+  .not-found h5 {
+    color: #900;
+    text-align: center;
+    vertical-align: middle;
+    display: table-cell; }
+
 @media all and (min-width: 990px) {
   .sales-horses {
     height: 400px; }
