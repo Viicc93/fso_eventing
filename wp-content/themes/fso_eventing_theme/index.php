@@ -2,15 +2,14 @@
 <?php $i = 0; ?>
 
 <div class="main-content">
-
-	<?php if ( have_posts() ) : ?>
 	<div class="posts col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	<?php if ( have_posts() ) : ?>
 
 	<?php	while ( have_posts() ) : the_post(); ?>
 
 				<?php if ($i === 0 ): ?>
 
-					<article class="hero-post">
+					<article class="hero-post h-entry">
 						<div class="thumbnail">
 							<?php the_post_thumbnail();?>
 						</div>
@@ -23,7 +22,7 @@
 
 				<?php else: ?>
 
-					<article class="post">
+					<article class="post h-entry">
 						<?php if ( has_post_thumbnail() ) : ?>
 							<div class="thumbnail">
 								<div class="img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
@@ -46,9 +45,9 @@
 
 				<?php $i++; ?>
 			<?php endwhile; else : ?>
-
-			<p><?php _e( 'No Posts' , 'fso-eventing'); ?></p>
-
+					<div class="not-found">
+						<h5><?php _e( 'Ouups, nothing foud here!' , 'fso-eventing'); ?></h5>
+					</div>
 		<?php endif; ?>
 
 	</div>

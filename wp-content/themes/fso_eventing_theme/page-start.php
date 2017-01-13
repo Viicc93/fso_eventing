@@ -11,9 +11,9 @@
       </div>
 
 
-  				<article class="page">
+  				<article class="page h-entry">
   					<div class="content start-page-content">
-  							<div class=""><?php the_content(); ?></div>
+  							<div class="e-content"><?php the_content(); ?></div>
   					</div>
   				</article>
 

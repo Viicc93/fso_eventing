@@ -16,8 +16,9 @@
 					</article>
 
 			<?php endwhile; else : ?>
-
-			<p><?php _e( 'No Posts' , 'fso-eventing'); ?></p>
+				<div class="not-found">
+					<p><?php _e( 'No page was found here' , 'fso-eventing'); ?></p>
+				</div>
 
 		<?php endif; ?>
 
