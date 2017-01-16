@@ -40,6 +40,10 @@
 	color: $link-color;
 }
 
+.latest-news {
+	width: 90%;
+	margin: $space-sm auto;
+}
 @media all and (min-width: $screen-xs) {
 	.post {
 		overflow: hidden;
@@ -81,10 +85,6 @@
 		.img {
 			height: 150px;
 		}
-	}
-	.latest-news {
-		width: 80%;
-		margin: $space-sm auto;
 	}
 	.post-wide {
 		.thumbnail {
