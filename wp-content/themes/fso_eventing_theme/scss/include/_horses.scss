@@ -8,12 +8,16 @@
   }
 }
 .horse-images {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
   overflow: hidden;
   display: table;
   margin: $space-sm auto;
-  img {
-    height: 100px;
+ img{
+    height: 75px;
     width: auto;
+    margin: 2px;
   }
 }
 
@@ -45,6 +49,11 @@
       b {
         font-size: 16px;
       }
+    }
+  }
+  .horse-images {
+   img{
+      height: 150px;
     }
   }
 }

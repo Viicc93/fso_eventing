@@ -5,8 +5,8 @@ $(document).ready(function(){
 							prevEffect : 'none',
 							nextEffect : 'none',
 
-							closeBtn  : false,
-							arrows    : false,
+							closeBtn  : true,
+							arrows    : true,
 							nextClick : true,
 
 							helpers : {

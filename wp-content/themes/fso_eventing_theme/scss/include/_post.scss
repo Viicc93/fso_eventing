@@ -24,11 +24,13 @@
 	}
 }
 
-.thumbnail {
-	margin-bottom: $space-xxs;
-	.img {
-		height: 250px;
-		background-size: cover;
+.post {
+	.thumbnail {
+		margin-bottom: $space-xxs;
+		.img {
+			height: 250px;
+			background-size: cover;
+		}
 	}
 }
 .post-date {
@@ -73,20 +75,24 @@
 }
 
 @media all and (min-width: $screen-sm) {
-	.thumbnail {
-		.img {
-			height: 250px;
+		.post {
+			.thumbnail {
+			.img {
+				height: 250px;
+			}
 		}
-	}
+		}
 	.read-more {
 		font-size: $text-lg;
 	}
 }
 
 @media all and (min-width: $screen-md) {
-	.thumbnail {
-		.img {
-			height: 150px;
+	.post {
+		.thumbnail {
+			.img {
+				height: 150px;
+			}
 		}
 	}
 	.post-wide {
