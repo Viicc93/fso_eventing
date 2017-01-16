@@ -7,7 +7,15 @@
     }
   }
 }
-
+.horse-images {
+  overflow: hidden;
+  display: table;
+  margin: $space-sm auto;
+  img {
+    height: 100px;
+    width: auto;
+  }
+}
 
 @media all and (min-width: $screen-xs) {
   .horse-sm {

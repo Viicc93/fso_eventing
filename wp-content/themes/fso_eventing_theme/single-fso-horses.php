@@ -55,6 +55,42 @@
 								 <p><b class="horse-tag p-category"><?php _e('Level: ', 'fso-eventing'); ?></b><?php the_field('level'); ?></p>
 							</div>
 							<div class=""><?php the_field('information'); ?></div>
+							<div class="horse-images">
+								<?php
+									$image1 = get_field('image_1');
+									$image2 = get_field('image_2');
+									$image3 = get_field('image_3');
+									$image4 = get_field('image_4');
+									$image5 = get_field('image_5');
+									
+									if( !empty($image1) ): ?>
+									<a class="fancybox-thumbs" data-fancybox-group="thumb1" href="<?php echo $image1['url']; ?>"><img src="<?php echo $image1['url']; ?>" alt="" /></a>
+
+        					<a class="fancybox-thumbs hidden" data-fancybox-group="thumb1" href="<?php echo $image1['url']; ?>"><img src="<?php echo $image1['url']; ?>" alt="" /></a>
+									<?php endif; ?>
+									<?php if( !empty($image2) ): ?>
+										<a class="fancybox-thumbs" data-fancybox-group="thumb1" href="<?php echo $image2['url']; ?>"><img src="<?php echo $image2['url']; ?>" alt="" /></a>
+
+	        					<a class="fancybox-thumbs hidden" data-fancybox-group="thumb1" href="<?php echo $image2['url']; ?>"><img src="<?php echo $image2['url']; ?>" alt="" /></a>
+									<?php endif; ?>
+									<?php if( !empty($image3) ): ?>
+										<a class="fancybox-thumbs" data-fancybox-group="thumb1" href="<?php echo $image3['url']; ?>"><img src="<?php echo $image3['url']; ?>" alt="" /></a>
+
+	        					<a class="fancybox-thumbs hidden" data-fancybox-group="thumb1" href="<?php echo $image3['url']; ?>"><img src="<?php echo $image3['url']; ?>" alt="" /></a>
+									<?php endif; ?>
+									<?php if( !empty($image4) ): ?>
+										<a class="fancybox-thumbs" data-fancybox-group="thumb1" href="<?php echo $image4['url']; ?>"><img src="<?php echo $image4['url']; ?>" alt="" /></a>
+
+										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb1" href="<?php echo $image4['url']; ?>"><img src="<?php echo $image4['url']; ?>" alt="" /></a>
+									<?php endif; ?>
+									<?php if( !empty($image5) ): ?>
+										<a class="fancybox-thumbs" data-fancybox-group="thumb1" href="<?php echo $image5['url']; ?>"><img src="<?php echo $image5['url']; ?>" alt="" /></a>
+
+										<a class="fancybox-thumbs hidden" data-fancybox-group="thumb1" href="<?php echo $image5['url']; ?>"><img src="<?php echo $image5['url']; ?>" alt="" /></a>
+									<?php endif; ?>
+
+
+							</div>
 
 						</article>
 
