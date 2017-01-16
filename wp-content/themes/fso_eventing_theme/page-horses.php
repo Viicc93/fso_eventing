@@ -34,7 +34,7 @@
 
 					<article class="panel h-entry">
 						<h1 class="p-name"><?php the_title(); ?></h1>
-						<div class=""><?php the_content(); ?></div>
+						<div class="e-content"><?php the_content(); ?></div>
 					</article>
 
 			<?php endwhile; else : ?>
@@ -103,8 +103,5 @@
 			</div>
 		</aside>
 
-
-
-</div>
 
 <?php get_footer(); ?>

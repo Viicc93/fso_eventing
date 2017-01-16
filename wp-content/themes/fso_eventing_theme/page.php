@@ -10,9 +10,9 @@
 			</div>
 		<?php endif; ?>
 
-					<article class="fso-page panel">
-						<h1><?php the_title(); ?></h1>
-						<div class=""><?php the_content(); ?></div>
+					<article class="fso-page panel h-entry">
+						<h1 class="p-name"><?php the_title(); ?></h1>
+						<div class="e-content"><?php the_content(); ?></div>
 					</article>
 
 			<?php endwhile; else : ?>
