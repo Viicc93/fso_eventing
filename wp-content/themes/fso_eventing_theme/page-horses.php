@@ -32,7 +32,7 @@
 			</div>
 		<?php endif; ?>
 
-					<article class="panel h-entry">
+					<article class=" fso-page panel h-entry">
 						<h1 class="p-name"><?php the_title(); ?></h1>
 						<div class="e-content"><?php the_content(); ?></div>
 					</article>

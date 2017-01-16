@@ -32,7 +32,7 @@
 	}
 }
 .post-date {
-		margin-bottom: 0;
+		margin: 3px 0;
 		color: $grey;
 }
 .read-more {
@@ -59,12 +59,15 @@
 		 .content {
 			width: 60%;
 			float: left;
-			padding-left: $space-xxs;
+			padding-left: $space-sm;
 		}
 		.read-more {
 			float: right;
 			padding-bottom: $space-xxs;
 			padding-right: $space-xxs;
+		}
+		.post-date {
+				font-size: 14px;
 		}
 	}
 }
