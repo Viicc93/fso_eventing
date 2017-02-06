@@ -1,18 +1,20 @@
 .sidebar {
+    margin-top: $space-md;
   ul {
     li {
       list-style-type: none;
+      padding-left: $space-sm;
     }
   }
 }
 .sidebar-header {
+  padding: $space-xs;
   background-color: $main-color;
-  height: 35px;
   border-radius: 3px 3px 0 0;
   .sidebar-title {
+    margin: 0;
     font-size: $heading-sm;
     color: $secondary-heading-color;
-    padding: $space-xs;
   }
 }
 .sidebar-content {
@@ -34,10 +36,8 @@
 }
 @media all and (min-width: $screen-md) {
   .sidebar-header {
-    height: 50px;
     .sidebar-title {
       font-size: $heading-md;
-      padding: $space-xs;
     }
   }
 }
