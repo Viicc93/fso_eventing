@@ -1,4 +1,5 @@
 <?php get_header(); ?>
+<?php include 'navigation.php'; ?>
 <?php $i = 0; ?>
 
 <div class="main-content">

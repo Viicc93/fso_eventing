@@ -1,14 +1,15 @@
 <?php /* Template Name: Start Page */ ?>
-<?php get_header(); ?>
 
+<?php get_header(); ?>
+<div class="hero-img-slider" >
+	<?php wd_slider(2); ?>
+</div>
+<?php include 'navigation.php'; ?>
 <div class="main-content">
 
 	<?php if ( have_posts() ) : ?>
 
   	<?php	while ( have_posts() ) : the_post(); ?>
-      <div class="hero-img-slider" >
-        <?php wd_slider(2); ?>
-      </div>
 
 
   				<article class="page h-entry">

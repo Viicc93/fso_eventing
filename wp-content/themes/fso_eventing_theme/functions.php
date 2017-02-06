@@ -4,8 +4,9 @@ require_once('wp_bootstrap_navwalker.php');
 function fso_enqueue_scripts() {
     // Add bootstrap, fontawsome, css, js and more
         wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
+        wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array( 'jquery' ));
         wp_enqueue_style('fontawesome_css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-        wp_enqueue_style('fontawesome_css', 'https://fonts.googleapis.com/css?family=Oswald|Roboto');
+        wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Oswald|Roboto');
         wp_enqueue_style('style', get_stylesheet_uri());
         wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ));
 

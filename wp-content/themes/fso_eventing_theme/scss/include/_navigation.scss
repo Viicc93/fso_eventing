@@ -2,10 +2,45 @@
     background-color: $main-color;
     border: none;
     margin-bottom: 0;
-    border-radius: 4px 4px 0 0;
+    border-radius: 0 0 4px 4px;
 }
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: $secondary-text-color;
     background-color: $secondary-color;
+}
+
+.navbar-brand {
+  padding-left: 0;
+  img {
+    width: 120px;
+    margin-top: -110px;
+  }
+}
+
+@media all and (max-width: $screen-sm) {
+
+}
+@media all and (min-width: $screen-xs) {
+
+}
+@media all and (min-width: $screen-sm) {
+  .navbar-brand {
+    padding-left: 0;
+    img {
+      width: 150px;
+      margin-top: -132px;
+    }
+  }
+}
+
+@media all and (min-width: $screen-md) {
+  .navbar-brand {
+    padding-left: 0;
+    img {
+      width: 200px;
+      margin-top: -172px;
+    }
+  }
+
 }
