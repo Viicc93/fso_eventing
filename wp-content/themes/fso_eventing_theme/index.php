@@ -1,4 +1,11 @@
 <?php get_header(); ?>
+<?php if ( have_posts() ) : ?>
+	<?php if ( has_post_thumbnail() ) : ?>
+		<div class="hero-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+		</div>
+	<?php endif; ?>
+
+<?php endif; ?>
 <?php include 'navigation.php'; ?>
 <?php $i = 0; ?>
 

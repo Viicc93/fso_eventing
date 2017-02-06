@@ -27,7 +27,7 @@ if ( have_posts() ) :
 
 
   <?php endwhile; else: ?>
-    
+
     <div class="not-found">
       <p><?php _e( 'No post was found here' , 'fso-eventing'); ?></p>
     </div>

@@ -5,6 +5,8 @@
 	<?php if ( has_post_thumbnail() ) : ?>
 		<div class="hero-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 		</div>
+	<?php else: ?>
+		<div class="hero-img"></div>
 	<?php endif; ?>
 <?php endwhile; ?>
 
