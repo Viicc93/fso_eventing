@@ -1,10 +1,10 @@
 
   					<article class="post horse-sm h-entry">
+              <div class="post-img">
   							<div class="thumbnail" >
-									<div class="img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-
-									</div>
+									<div class="img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
   							</div>
+              </div>
   							<div class="content">
 
   							<h2 class ="post-title p-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>

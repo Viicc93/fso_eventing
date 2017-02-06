@@ -1,0 +1,60 @@
+.post {
+	.thumbnail {
+		margin-bottom: $space-xxs;
+		.img {
+			height: 150px;
+			background-size: cover;
+		}
+	}
+}
+
+@media all and (min-width: 320px) {
+  .post {
+  	.thumbnail {
+  		.img {
+  			height: 175px;
+  		}
+  	}
+  }
+}
+
+@media all and (min-width: 350px) {
+  .post {
+  	.thumbnail {
+  		.img {
+  			height: 200px;
+  		}
+  	}
+  }
+}
+@media all and (min-width: 395px) {
+  .post {
+  	.thumbnail {
+  		.img {
+  			height: 225px;
+  		}
+  	}
+  }
+}
+@media all and (min-width: 435px) {
+  .post {
+  	.thumbnail {
+  		.img {
+  			height: 250px;
+  		}
+  	}
+  }
+}
+@media all and (min-width: $screen-xs) {
+  .post {
+  	.thumbnail {
+  		.img {
+        width: 150px;
+  			height: 100px;
+  		}
+  	}
+  }
+}
+@media all and (min-width: $screen-sm) {
+
+}

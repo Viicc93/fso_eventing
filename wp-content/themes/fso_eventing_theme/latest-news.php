@@ -7,9 +7,11 @@ if ( have_posts() ) :
 	while ( $horses->have_posts() ) : $horses->the_post(); ?>
     <article class="post post-wide h-entry">
       <?php if ( has_post_thumbnail() ) : ?>
+        <div class="post-img">
         <div class="thumbnail">
           <div class="img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');"></div>
         </div>
+      </div>
 
         <div class="content">
       <?php else: ?>

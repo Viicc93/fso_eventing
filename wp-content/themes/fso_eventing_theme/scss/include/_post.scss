@@ -3,7 +3,7 @@
 	margin-bottom: $space-xs;
 }
 .posts {
-	padding-top: $space-sm;
+	padding-top: $space-md;
 }
 .post-title {
 	margin: 0;
@@ -24,15 +24,6 @@
 	}
 }
 
-.post {
-	.thumbnail {
-		margin-bottom: $space-xxs;
-		.img {
-			height: 250px;
-			background-size: cover;
-		}
-	}
-}
 .post-date {
 		margin: 3px 0;
 		color: $grey;
@@ -51,12 +42,9 @@
 		overflow: hidden;
 		clear: both;
 		margin-bottom: $space-sm;
-		.thumbnail {
+		.post-img {
 			width: 40%;
 			float: left;
-			.img {
-				height:200px;
-			}
 		}
 		 .content {
 			width: 60%;
@@ -75,28 +63,15 @@
 }
 
 @media all and (min-width: $screen-sm) {
-		.post {
-			.thumbnail {
-			.img {
-				height: 250px;
-			}
-		}
-		}
 	.read-more {
 		font-size: $text-lg;
 	}
 }
 
 @media all and (min-width: $screen-md) {
-	.post {
-		.thumbnail {
-			.img {
-				height: 150px;
-			}
-		}
-	}
+
 	.post-wide {
-		.thumbnail {
+		.post-img {
 			width: 30%;
 		}
 		 .content {
