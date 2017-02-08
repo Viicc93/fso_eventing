@@ -2,8 +2,10 @@
 	.thumbnail {
 		margin-bottom: $space-xxs;
 		.img {
-			height: 150px;
-			background-size: cover;
+			overflow: hidden;
+			img {
+				width: 105%;
+			}
 		}
 	}
 }
@@ -12,7 +14,7 @@
   .post {
   	.thumbnail {
   		.img {
-  			height: 175px;
+  			//height: 175px;
   		}
   	}
   }
@@ -22,7 +24,7 @@
   .post {
   	.thumbnail {
   		.img {
-  			height: 200px;
+  			//height: 200px;
   		}
   	}
   }
@@ -31,7 +33,7 @@
   .post {
   	.thumbnail {
   		.img {
-  			height: 225px;
+  			//height: 225px;
   		}
   	}
   }
@@ -40,7 +42,7 @@
   .post {
   	.thumbnail {
   		.img {
-  			height: 250px;
+  			//height: 250px;
   		}
   	}
   }
@@ -49,8 +51,8 @@
   .post {
   	.thumbnail {
   		.img {
-        width: 150px;
-  			height: 100px;
+        //width: 150px;
+  			//height: 100px;
   		}
   	}
   }
