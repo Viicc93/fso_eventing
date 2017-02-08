@@ -23,7 +23,12 @@
     }
 	}
 }
-
+.post-categories {
+	display: inline;
+	li {
+		display: inline;
+	}
+}
 .post-date {
 		margin: 3px 0;
 		color: $grey;

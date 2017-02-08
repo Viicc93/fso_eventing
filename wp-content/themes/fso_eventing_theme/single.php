@@ -24,6 +24,8 @@
 				<?php endif; ?>
 					<h1 class="p-name"><?php the_title(); ?></h1>
   				<div class="e-content"><?php the_content(); ?></div>
+					<p class="post-date dt-published">Posted at: <?php the_date(); ?></p>
+					<span class="categories">Categories: <?php the_category(); ?></span>
 				</article>
 		<?php endwhile; else: ?>
 				<div class="not-found">
