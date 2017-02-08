@@ -4,8 +4,14 @@
     li {
       list-style-type: none;
       padding-left: $space-sm;
+      li {
+        padding-left: 0;
+      }
     }
   }
+  box-shadow: 0px 5px 5px rgba(0,0,0,.05);
+  padding: 0;
+  border-radius: 4px;
 }
 .sidebar-header {
   padding: $space-xs;
@@ -22,6 +28,9 @@
 }
 
 .widget {
+  &.widget_search {
+    padding-left: 0;
+  }
   a {
     color: $link-color;
   }

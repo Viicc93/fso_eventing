@@ -57,3 +57,18 @@
     }
   }
 }
+
+@media all and (min-width: $screen-sm) {
+  .horse-images {
+   img{
+      height: 110px;
+    }
+  }
+}
+@media all and (min-width: $screen-lg) {
+  .horse-images {
+   img{
+      height: 140px;
+    }
+  }
+}
