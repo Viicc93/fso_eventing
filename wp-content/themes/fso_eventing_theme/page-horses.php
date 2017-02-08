@@ -44,7 +44,7 @@
     <?php if ( $horses->have_posts() ) : ?>
 			<h2><?php _e('Our horses', 'fso-eventing'); ?></h2>
   		<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
-				<?php include 'horse.php'; ?>
+				<?php include 'include/horse.php'; ?>
   		<?php endwhile; else : ?>
   			<p><?php _e( 'No horses at the moment...' , 'fso-eventing'); ?></p>
   	<?php endif; ?>
@@ -53,7 +53,7 @@
 			<?php if ( $horses_for_sale->have_posts() ) : ?>
 				<h2><?php _e('Horses for sale', 'fso-eventing'); ?></h2>
 				<?php	while ( $horses_for_sale->have_posts() ) : $horses_for_sale->the_post(); ?>
-					<?php include 'horse.php'; ?>
+					<?php include 'include/horse.php'; ?>
 				<?php endwhile; else : ?>
 					<div class="not-found">
 						<p><?php _e( 'No sale horses at the moment...' , 'fso-eventing'); ?></p>
@@ -70,25 +70,10 @@
 				<ul class="c widget-area" role="complementary">
 					<?php dynamic_sidebar( 'horses-sidebar' ); ?>
 				</ul>
-		<?php endif; ?>
-			<div class="all-horses">
-				<ul class="wiget_area">
-					<li class="c wiget widget_archive">
-						<h2 class="widget-title"><?php _e('Our Horses', 'fso-eventing') ?></h2>
-						<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
-							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-						<?php endwhile;  ?>
-					</li>
-					<li class="c wiget widget_archive">
-						<h2 class="widget-title"><?php _e('Horses for sale', 'fso-eventing') ?></h2>
-							<?php	while ( $horses_for_sale->have_posts() ) : $horses_for_sale->the_post(); ?>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-							<?php endwhile;  ?>
-					</li>
-				</ul>
 			</div>
-		</div>
-	</aside>
+		<?php endif; ?>
 
+	</aside>
+</div>
 
 <?php get_footer(); ?>

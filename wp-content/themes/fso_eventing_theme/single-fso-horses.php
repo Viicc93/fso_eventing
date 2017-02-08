@@ -80,22 +80,6 @@
 				<?php dynamic_sidebar( 'horses-sidebar' ); ?>
 			</ul>
 		<?php endif; ?>
-			<div class="all-horses">
-				<ul class="wiget_area">
-					<li class="c wiget widget_archive">
-						<h2 class="widget-title"><?php _e('Our Horses', 'fso-eventing') ?></h2>
-						<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
-							<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-						<?php endwhile;  ?>
-					</li>
-					<li class="c wiget widget_archive">
-						<h2 class="widget-title"><?php _e('Horses for sale', 'fso-eventing') ?></h2>
-						<?php	while ( $horses_for_sale->have_posts() ) : $horses_for_sale->the_post(); ?>
-								<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
-						<?php endwhile;  ?>
-					</li>
-				</ul>
-			</div>
 		</div>
 	</aside>
 
