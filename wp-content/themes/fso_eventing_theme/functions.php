@@ -1,6 +1,8 @@
 <?php
 require_once('wp_bootstrap_navwalker.php');
 
+include 'include/horse-list-widgets.php';
+
 function fso_enqueue_scripts() {
   // Enqueue Scripts
   if ( !is_admin() ) {
@@ -10,7 +12,8 @@ function fso_enqueue_scripts() {
     wp_enqueue_script('jquery');
   }
   wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array( 'jquery' ));
-  wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery' ));
+  wp_enqueue_script( 'scrollreveal', get_stylesheet_directory_uri() . '/js/scrollreveal.min.js', array( 'jquery' ));
+  wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery', 'scrollreveal' ));
   //Enqueue Styles
   wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
   wp_enqueue_style('fontawesome_css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
@@ -93,7 +96,7 @@ function fso_init() {
     );
 
   register_post_type( 'fso-horses', $args );
-  
+
 }
 add_action( 'init', 'fso_init' );
 
