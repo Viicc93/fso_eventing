@@ -57,16 +57,6 @@ class FSO_SHL_Widget extends WP_Widget {
 
 }
 
-function mrb_shl_widget() {
-
-  register_widget( 'FSO_SHL_Widget' );
-
-}
-add_action( 'widgets_init', 'mrb_shl_widget' );
-
-?>
-
-<?php
 class FSO_OHL_Widget extends WP_Widget {
 
   function __construct() {
@@ -126,11 +116,11 @@ class FSO_OHL_Widget extends WP_Widget {
 
 }
 
-function mrb_ohl_widget() {
-
+function mrb_hl_widget() {
+  register_widget( 'FSO_SHL_Widget' );
   register_widget( 'FSO_OHL_Widget' );
 
 }
-add_action( 'widgets_init', 'mrb_ohl_widget' );
+add_action( 'widgets_init', 'mrb_hl_widget' );
 
 ?>
