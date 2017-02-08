@@ -23,4 +23,4 @@
       <?php endif; ?>
     <?php endif; ?>
 
-    <?php include 'navigation.php'; ?>
+    <?php include 'include/navigation.php'; ?>

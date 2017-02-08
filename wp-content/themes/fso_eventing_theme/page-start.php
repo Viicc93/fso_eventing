@@ -15,7 +15,7 @@
 	<?php endif; ?>
 			<div class="latest-news">
 				<h1><?php _e('LATEST NEWS'); ?></h1>
-				<?php include 'latest-news.php'; ?>
+				<?php include 'include/latest-news.php'; ?>
 			</div>
   	<?php	while ( have_posts() ) : the_post(); ?>
       <div class="image-link" style="background-image: url('<?php the_field('image_link_background'); ?>');">
