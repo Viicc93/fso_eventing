@@ -1,5 +1,7 @@
 .fso-footer {
+    background: $main-color url('img/ostholt_eventing_banner.jpg') no-repeat left bottom;
     background-color: $main-color;
+    background-size: contain;
     border-color: $border-color;
     border-radius: 0 0 4px 4px;
     overflow: hidden;
@@ -10,11 +12,34 @@
     h2.widget-title {
       color: #eee;
     }
-
+    .footer-widgets {
+      overflow: auto;
+      margin-bottom: 110px;
+      padding-left: $space-sm;
+    }
 }
 
 .copyright {
   padding: $space-md;
   text-align: center;
   color: $grey;
+}
+@media all and (min-width: $screen-sm) {
+  .fso-footer {
+      background-size: cover;
+      height: 300px;
+  }
+  .footer-widgets {
+    overflow: hidden;
+    .widget {
+      margin-top: 50px;
+      width: 25%;
+      display: inline;
+      float: right;
+      padding-right: $space-sm;
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
 }

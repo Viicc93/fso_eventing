@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php bloginfo('url'); ?>/wp-content/themes/fso_eventing_theme/img/logo.jpg" alt=""></a>
+            <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php bloginfo('url'); ?>/wp-content/themes/fso_eventing_theme/img/logo_fso.png" alt=""></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">

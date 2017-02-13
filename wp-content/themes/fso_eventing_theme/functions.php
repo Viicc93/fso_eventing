@@ -62,7 +62,7 @@ function fso_widgets_init() {
     'name' => __( 'Footer', 'fso-eventing' ),
     'id' => 'footer-wigets',
     'description' => __( 'Widget area.', 'fso-eventing' ),
-    'before_widget' => '<li id="%1$s" class="widget %2$s col-xs-12 col-sm-3 col-md-3">',
+    'before_widget' => '<li id="%1$s" class="widget %2$s ">',
     'after_widget'  => '</li>',
     'before_title'  => '<h2 class="widget-title">',
     'after_title'   => '</h2>',
