@@ -22,6 +22,13 @@
         <a href="<?php the_field('image_link_url');?>"><h1><?php the_field('image_link_text');?></h1></a>
       </div>
     <?php endwhile; ?>
+		<?php if ( is_active_sidebar( 'bottom-start' ) ) : ?>
+		<div class="sidebar-content">
+			<ul class="c widget-area" role="complementary">
+				<?php dynamic_sidebar( 'bottom-start' ); ?>
+			</ul>
+		</div>
+		<?php endif; ?>
 </div>
 
 <?php get_footer(); ?>
