@@ -34,7 +34,7 @@ $(document).ready(function(){
 		};
 
 		window.sr = ScrollReveal();
-		sr.reveal('.post, .hero-post', postReveal);
+		sr.reveal('.post, .hero-post',  animationReveal);
 		sr.reveal('.fso-animation', animationReveal);
 
 
