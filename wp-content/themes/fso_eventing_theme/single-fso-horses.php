@@ -79,8 +79,8 @@
 			<ul class="c widget-area" role="complementary">
 				<?php dynamic_sidebar( 'horses-sidebar' ); ?>
 			</ul>
-		<?php endif; ?>
 		</div>
+		<?php endif; ?>
 	</aside>
 
 </div>
