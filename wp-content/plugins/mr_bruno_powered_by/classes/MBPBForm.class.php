@@ -36,6 +36,7 @@ class MBPBForm {
     }
     // render upload form
     $this->mbpb_upload_form();
+    $this->mbpb_render_sponsors();
   }
 
   // Upload form on admin page
@@ -75,6 +76,19 @@ class MBPBForm {
 
   }
 
+  public function mbpb_render_sponsors() {
+    $all_sponsors = $this->ajax->mbpb_get_from_database();
+
+    foreach($all_sponsors as $sponsor) {
+
+         // List all sponsors ?>
+         <div class="mbpb-row">
+           <img class="mbpb-row-img" src="<?php echo $sponsor['img'][0]; ?>" />
+           <h2 class="mbpb-row-title"><?php  echo $sponsor['name']; ?></h2><a class="mbpb-row-link" url="<?php echo $sponsor['url']; ?>" target="_blank"><?php echo $sponsor['url']; ?></a>
+         </div>
+         <?php
+     }
+  }
 
 
   // Add javascript for media uploader
