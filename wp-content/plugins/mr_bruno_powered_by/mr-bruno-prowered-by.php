@@ -14,6 +14,7 @@ $classes = array(
   'MBPBRegister',
   'MBPBAjax',
   'MBPBForm',
+  'MBPBRender',
   'MBPBWidget'
 );
 
