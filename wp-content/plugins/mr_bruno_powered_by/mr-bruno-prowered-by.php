@@ -13,7 +13,8 @@ define('MBPB_PLUGIN_DIR_PATH', __DIR__);
 $classes = array(
   'MBPBRegister',
   'MBPBAjax',
-  'MBPBForm'
+  'MBPBForm',
+  'MBPBWidget'
 );
 
 foreach($classes as $class) {
