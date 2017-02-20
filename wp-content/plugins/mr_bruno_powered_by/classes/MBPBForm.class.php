@@ -1,9 +1,5 @@
 <?php
 class MBPBForm {
-  protected static $wpdb;
-  protected static $table_name = 'MBPB_sponsors';
-  protected static $prefix_table_name;
-  public $options;
   private $ajax;
 
   public function __construct(){
@@ -15,19 +11,12 @@ class MBPBForm {
     add_action( 'admin_footer',array(&$this, 'media_selector_print_scripts') );
   }
 
-  // Set up wpdb variables in this function when properties are protected static
-  protected static function setup_wpdb() {
-    global $wpdb;
-    MBPBForm::$wpdb = $wpdb;
-    MBPBForm::$prefix_table_name = MBPBForm::$wpdb->prefix . MBPBForm::$table_name;
-  }
 
   // Add a page to admin menu add call mbpb_plugin_page function
   public function mbpb_menu_page() {
     add_menu_page('Powered By', 'Powered By', 'edit_theme_options', 'powered_by', array($this, 'mbpb_plugin_page'), 'dashicons-star-filled');
 
   }
-
   // Set up admin page
   public function mbpb_plugin_page () {
     // if form submit, insert to database
