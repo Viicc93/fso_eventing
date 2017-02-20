@@ -7,6 +7,7 @@ class MBPBForm {
   private $ajax;
 
   public function __construct(){
+    // so we can use methods fom ajax class
     $this->ajax = new MBPBAjax;
     // Add admin page for plugin
     add_action('admin_menu', array(&$this, 'mbpb_menu_page'));
@@ -29,6 +30,10 @@ class MBPBForm {
 
   // Set up admin page
   public function mbpb_plugin_page () {
+    // if form submit, insert to database
+    if(isset($_POST['submit_mbpb'])){
+      $this->ajax->mbpb_save_in_database();
+    }
     // render upload form
     $this->mbpb_upload_form();
   }

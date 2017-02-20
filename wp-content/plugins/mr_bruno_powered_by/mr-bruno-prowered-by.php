@@ -12,10 +12,13 @@ define('MBPB_PLUGIN_DIR_PATH', __DIR__);
 // Load classes
 $classes = array(
   'MBPBRegister',
+  'MBPBAjax',
   'MBPBForm'
 );
 
 foreach($classes as $class) {
   include_once(MBPB_PLUGIN_DIR_PATH . '/classes/'.$class.'.class.php');
+  // wait with MBPBAjax until we need it
+  if (stripos($class, "MBPBAjax") !== FALSE) { continue; }
   new $class();
 }

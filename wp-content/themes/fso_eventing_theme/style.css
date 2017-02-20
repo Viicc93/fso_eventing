@@ -23,11 +23,11 @@ Text Domain: fso-eventing
 *  BREAKPOINTS
 */
 p {
-  font-size: 10px;
+  font-size: 14px;
   font-family: 'Roboto', sans-serif; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 14px;
+  font-size: 16px;
   color: #063257;
   font-family: 'Oswald', sans-serif; }
 
@@ -36,7 +36,7 @@ a {
 
 @media all and (min-width: 460px) {
   p {
-    font-size: 12px; }
+    font-size: 15px; }
   h1, h2, h3, h4, h5, h6 {
     font-size: 18px; } }
 
@@ -53,7 +53,8 @@ a {
 
 #fso-wrapper {
   max-width: 1280px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden; }
 
 .main-content {
   overflow: auto; }
@@ -81,6 +82,7 @@ a {
   color: #eee;
   border: none;
   padding: 10px;
+  margin-bottom: 20px;
   border-radius: 4px;
   width: 75px; }
 
@@ -97,7 +99,7 @@ a {
   animation-name: example;
   animation-duration: 2s;
   width: 100%;
-  height: 200px; }
+  height: 100px; }
 
 #logo {
   width: 200px;
@@ -106,7 +108,7 @@ a {
 
 @media all and (min-width: 460px) {
   .hero-img {
-    height: 250px; } }
+    height: 168px; } }
 
 @media all and (min-width: 710px) {
   .hero-img {
@@ -120,17 +122,37 @@ a {
   background-color: #063257;
   border: none;
   margin-bottom: 0;
-  border-radius: 4px 4px 0 0; }
+  border-radius: 0 0 4px 4px; }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
   color: #eee;
   background-color: #883939; }
 
+.navbar-brand {
+  padding-left: 5px; }
+  .navbar-brand img {
+    width: 120px;
+    margin-top: -75px; }
+
+@media all and (min-width: 710px) {
+  .navbar-brand {
+    padding-left: 5px; }
+    .navbar-brand img {
+      width: 150px;
+      margin-top: -85px; } }
+
+@media all and (min-width: 990px) {
+  .navbar-brand {
+    padding-left: 10px; }
+    .navbar-brand img {
+      width: 200px;
+      margin-top: -120px; } }
+
 .fso-page {
-  padding: 50px; }
+  padding: 35px; }
 
 .start-page-content {
-  width: 80%;
+  width: 90%;
   margin: 50px auto;
   border-bottom: 1px solid #eee; }
 
@@ -169,7 +191,7 @@ a {
   margin-bottom: 10px; }
 
 .posts {
-  padding-top: 20px; }
+  padding-top: 35px; }
 
 .post-title {
   margin: 0; }
@@ -183,52 +205,48 @@ a {
   .single-img.thumbnail.vertical-image {
     max-width: 280px; }
 
-.thumbnail {
-  margin-bottom: 5px; }
-  .thumbnail .img {
-    height: 250px;
-    background-size: cover; }
+.post-categories {
+  display: inline; }
+  .post-categories li {
+    display: inline; }
 
 .post-date {
-  margin-bottom: 0;
+  margin: 3px 0;
   color: #777; }
 
 .read-more {
-  font-size: 10px;
+  font-size: 14px;
   color: #883939; }
+
+.latest-news {
+  width: 90%;
+  margin: 20px auto; }
 
 @media all and (min-width: 460px) {
   .post {
     overflow: hidden;
     clear: both;
     margin-bottom: 20px; }
-    .post .thumbnail {
+    .post .post-img {
       width: 40%;
       float: left; }
-      .post .thumbnail .img {
-        height: 200px; }
     .post .content {
       width: 60%;
       float: left;
-      padding-left: 5px; }
+      padding-left: 20px; }
     .post .read-more {
       float: right;
       padding-bottom: 5px;
-      padding-right: 5px; } }
+      padding-right: 5px; }
+    .post .post-date {
+      font-size: 14px; } }
 
 @media all and (min-width: 710px) {
-  .thumbnail .img {
-    height: 250px; }
   .read-more {
     font-size: 16px; } }
 
 @media all and (min-width: 990px) {
-  .thumbnail .img {
-    height: 150px; }
-  .latest-news {
-    width: 80%;
-    margin: 20px auto; }
-  .post-wide .thumbnail {
+  .post-wide .post-img {
     width: 30%; }
   .post-wide .content {
     width: 70%; } }
@@ -236,6 +254,18 @@ a {
 .horse-tags p b {
   color: #063257;
   font-size: 12px; }
+
+.horse-images {
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  overflow: hidden;
+  display: table;
+  margin: 20px auto; }
+  .horse-images img {
+    height: 75px;
+    width: auto;
+    margin: 2px; }
 
 @media all and (min-width: 460px) {
   .horse-sm .content {
@@ -252,42 +282,69 @@ a {
       float: left;
       margin: 5px; }
       .horse-tags p b {
-        font-size: 16px; } }
+        font-size: 16px; }
+  .horse-images img {
+    height: 150px; } }
 
-.sidebar ul li {
-  list-style-type: none; }
+@media all and (min-width: 710px) {
+  .horse-images img {
+    height: 110px; } }
+
+@media all and (min-width: 1280px) {
+  .horse-images img {
+    height: 140px; } }
+
+.post .thumbnail {
+  margin-bottom: 5px; }
+  .post .thumbnail .img {
+    overflow: hidden; }
+    .post .thumbnail .img img {
+      width: 105%; }
+
+.sidebar {
+  margin-top: 35px;
+  box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.05);
+  padding: 0;
+  border-radius: 4px; }
+  .sidebar ul li {
+    list-style-type: none;
+    padding-left: 20px; }
+    .sidebar ul li li {
+      padding-left: 0; }
 
 .sidebar-header {
+  padding: 10px;
   background-color: #063257;
-  height: 35px;
   border-radius: 3px 3px 0 0; }
   .sidebar-header .sidebar-title {
-    font-size: 14px;
-    color: #eee;
-    padding: 10px; }
+    margin: 0;
+    font-size: 16px;
+    color: #eee; }
 
 .sidebar-content {
   padding: 10px; }
+
+.widget.widget_search {
+  padding-left: 0; }
 
 .widget a {
   color: #883939; }
 
 .widget-title {
-  font-size: 14px; }
+  font-size: 16px; }
 
 @media all and (min-width: 710px) {
   .widget-title {
     font-size: 18px; } }
 
 @media all and (min-width: 990px) {
-  .sidebar-header {
-    height: 50px; }
-    .sidebar-header .sidebar-title {
-      font-size: 18px;
-      padding: 10px; } }
+  .sidebar-header .sidebar-title {
+    font-size: 18px; } }
 
 .fso-footer {
+  background: #063257 url("img/ostholt_eventing_banner.jpg") no-repeat left bottom;
   background-color: #063257;
+  background-size: contain;
   border-color: #777;
   border-radius: 0 0 4px 4px;
   overflow: hidden;
@@ -296,8 +353,27 @@ a {
     list-style-type: none; }
   .fso-footer h2.widget-title {
     color: #eee; }
+  .fso-footer .footer-widgets {
+    overflow: auto;
+    margin-bottom: 110px;
+    padding-left: 20px; }
 
 .copyright {
   padding: 35px;
   text-align: center;
   color: #777; }
+
+@media all and (min-width: 710px) {
+  .fso-footer {
+    background-size: cover;
+    height: 300px; }
+  .footer-widgets {
+    overflow: hidden; }
+    .footer-widgets .widget {
+      margin-top: 50px;
+      width: 25%;
+      display: inline;
+      float: right;
+      padding-right: 20px; }
+      .footer-widgets .widget p {
+        margin-bottom: 0; } }

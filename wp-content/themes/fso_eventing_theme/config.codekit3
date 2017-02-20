@@ -7,7 +7,7 @@
 		"uuidString": "8354B7DE-6176-470D-B2C5-B0FEEC866E75"
 		}
 	],
-"creatorBuild": "25479",
+"creatorBuild": "25504",
 "files": {
 	"\/footer.php": {
 		"ft": 8192,
@@ -35,11 +35,402 @@
 		"oF": 0,
 		"opt": 0
 		},
+	"\/img\/logo_fso.png": {
+		"ft": 32768,
+		"iS": 124100,
+		"oA": 0,
+		"oAP": "\/img\/logo_fso.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/img\/ostholt_eventing_banner.jpg": {
+		"ft": 16384,
+		"iS": 52014,
+		"oA": 0,
+		"oAP": "\/img\/ostholt_eventing_banner.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/include\/horse-list-widgets.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/include\/horse-list-widgets.php",
+		"oF": 0
+		},
+	"\/include\/horse.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/include\/horse.php",
+		"oF": 0
+		},
+	"\/include\/latest-news.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/include\/latest-news.php",
+		"oF": 0
+		},
+	"\/include\/navigation.php": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/include\/navigation.php",
+		"oF": 0
+		},
 	"\/index.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/index.php",
 		"oF": 0
+		},
+	"\/js\/fancybox\/.gitattributes": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/.gitattributes",
+		"oF": 0
+		},
+	"\/js\/fancybox\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/.gitignore",
+		"oF": 0
+		},
+	"\/js\/fancybox\/bower.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/js\/fancybox\/bower-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/js\/fancybox\/CHANGELOG.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/CHANGELOG.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/js\/fancybox\/composer.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/js\/fancybox\/composer-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/js\/fancybox\/demo\/1_b.jpg": {
+		"ft": 16384,
+		"iS": 82080,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/1_b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/1_s.jpg": {
+		"ft": 16384,
+		"iS": 8097,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/1_s.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/2_b.jpg": {
+		"ft": 16384,
+		"iS": 51674,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/2_b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/2_s.jpg": {
+		"ft": 16384,
+		"iS": 1455,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/2_s.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/3_b.jpg": {
+		"ft": 16384,
+		"iS": 55777,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/3_b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/3_s.jpg": {
+		"ft": 16384,
+		"iS": 2543,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/3_s.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/4_b.jpg": {
+		"ft": 16384,
+		"iS": 84150,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/4_b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/4_s.jpg": {
+		"ft": 16384,
+		"iS": 5203,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/4_s.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/5_b.jpg": {
+		"ft": 16384,
+		"iS": 76217,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/5_b.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/5_s.jpg": {
+		"ft": 16384,
+		"iS": 4412,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/demo\/5_s.jpg",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/demo\/ajax.txt": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/demo\/ajax.txt",
+		"oF": 0
+		},
+	"\/js\/fancybox\/demo\/iframe.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/demo\/iframe.html",
+		"oF": 0
+		},
+	"\/js\/fancybox\/demo\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/demo\/index.html",
+		"oF": 0
+		},
+	"\/js\/fancybox\/fancybox.jquery.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/js\/fancybox\/fancybox.jquery-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/js\/fancybox\/gulpfile.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/gulpfile-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/fancybox\/lib\/jquery-1.10.2.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/lib\/jquery-1.10.2.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/fancybox\/lib\/jquery.mousewheel.pack.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/lib\/jquery.mousewheel.pack-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/fancybox\/package.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/js\/fancybox\/package-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/js\/fancybox\/README.md": {
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"eLB": 0,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/README.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
+		},
+	"\/js\/fancybox\/source\/blank.gif": {
+		"ft": 4194304,
+		"iS": 43,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/blank.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/source\/fancybox_loading.gif": {
+		"ft": 4194304,
+		"iS": 6567,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/fancybox_loading.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/source\/fancybox_loading@2x.gif": {
+		"ft": 4194304,
+		"iS": 13984,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/fancybox_loading@2x.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/source\/fancybox_overlay.png": {
+		"ft": 32768,
+		"iS": 1003,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/fancybox_overlay.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/source\/fancybox_sprite.png": {
+		"ft": 32768,
+		"iS": 1362,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/fancybox_sprite.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/source\/fancybox_sprite@2x.png": {
+		"ft": 32768,
+		"iS": 6553,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/fancybox_sprite@2x.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/source\/helpers\/fancybox_buttons.png": {
+		"ft": 32768,
+		"iS": 1080,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/helpers\/fancybox_buttons.png",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/js\/fancybox\/source\/helpers\/jquery.fancybox-buttons.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/source\/helpers\/jquery.fancybox-buttons-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/js\/fancybox\/source\/helpers\/jquery.fancybox-buttons.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/helpers\/jquery.fancybox-buttons-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/fancybox\/source\/helpers\/jquery.fancybox-media.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/helpers\/jquery.fancybox-media-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/fancybox\/source\/helpers\/jquery.fancybox-thumbs.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/source\/helpers\/jquery.fancybox-thumbs-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/js\/fancybox\/source\/helpers\/jquery.fancybox-thumbs.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/helpers\/jquery.fancybox-thumbs-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/fancybox\/source\/jquery.fancybox.css": {
+		"aP": 0,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/source\/jquery.fancybox-min.css",
+		"oF": 0,
+		"oS": 0
+		},
+	"\/js\/fancybox\/source\/jquery.fancybox.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/jquery.fancybox-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/fancybox\/source\/jquery.fancybox.pack.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/fancybox\/source\/jquery.fancybox.pack-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/fancybox\/sprite.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/js\/fancybox\/sprite.psd",
+		"oF": 0
+		},
+	"\/js\/script-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/script-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
 		},
 	"\/js\/script.js": {
 		"ft": 64,
@@ -50,10 +441,19 @@
 		"sC": 1,
 		"tS": 0
 		},
-	"\/latest-news.php": {
+	"\/js\/scrollreveal.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/scrollreveal.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/news-page.php": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/latest-news.php",
+		"oAP": "\/news-page.php",
 		"oF": 0
 		},
 	"\/page-horses.php": {
@@ -191,6 +591,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/scss\/include\/_thumbnail.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/scss\/include\/_thumbnail.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/scss\/include\/_typography.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -226,7 +639,7 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/style.css",
-		"oF": 2,
+		"oF": 3,
 		"oS": 0,
 		"uL": 1
 		},
@@ -267,7 +680,7 @@
 	"creationDate": 505812605,
 	"displayValue": "fso_eventing_theme",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-chloe"
+	"iconImageName": "brackets_gray"
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -915,6 +1328,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -1454,6 +1871,10 @@
 		"prefer-const": {
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
+			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
 			},
 		"prefer-numeric-literals": {
 			"active": 0,
