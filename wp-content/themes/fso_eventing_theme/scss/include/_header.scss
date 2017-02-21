@@ -3,6 +3,26 @@
     from {width: 150%;}
     to {width: 100;}
 }
+.hero-img-slider, .hero-img {
+    position: relative;
+    #language-nav-mobile {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      li {
+        display: inline;
+      }
+      .wpml-ls-menu-item .wpml-ls-flag {
+        width: 35px;
+        height: 22px;
+        border: 1px solid #fff;
+      }
+    }
+}
+
+#language-nav-desktop {
+  display: none;
+}
 
 .hero-img {
 	background-size: cover;
@@ -29,6 +49,26 @@
 @media all and (min-width: $screen-sm) {
   .hero-img {
     height: 300px;
+  }
+  #language-nav-mobile {
+    display: none;
+  }
+  .navbar {
+    position: relative;;
+    #language-nav-desktop {
+      position: absolute;
+      display: inline-block;
+      top: 15px;
+      right: 15px;
+      li {
+        display: inline;
+      }
+      .wpml-ls-menu-item .wpml-ls-flag {
+        width: 35px;
+        height: 22px;
+        border: 1px solid #fff;
+      }
+    }
   }
 }
 

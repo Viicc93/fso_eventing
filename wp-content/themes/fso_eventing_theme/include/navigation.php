@@ -10,7 +10,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php bloginfo('url'); ?>/wp-content/themes/fso_eventing_theme/img/logo_fso.png" alt=""></a>
+            <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php echo content_url(); ?>/themes/fso_eventing_theme/img/logo_fso.png" alt=""></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">
@@ -24,6 +24,19 @@
                     'walker' => new wp_bootstrap_navwalker())
                 );
             ?>
+
           </div>
+          <?php
+
+                  wp_nav_menu( array(
+                      'menu' => 'languagenav',
+                      'container' => false,
+                      'menu_id' => 'language-nav-desktop',
+                      'menu_class' => 'language-nav',
+                      'theme_location' => 'languagenav'
+                    )
+                  );
+
+           ?>
     </nav>
   </header>

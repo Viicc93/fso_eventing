@@ -27,6 +27,7 @@ function fso_setup() {
   add_theme_support( 'automatic-feed-links' );
   // Register navigation menu
   register_nav_menu( 'primary', __( 'Primary Menu', 'primarymenu' ) );
+  register_nav_menu( 'languagenav', __( 'Language Menu', 'languagenav' ) );
   // Disable standard wordpress intern gallery style (inline)
   add_filter( 'use_default_gallery_style', '__return_false' );
 }
