@@ -15,7 +15,7 @@
       <p><b class="horse-tag p-category"><?php _e('Level: ', 'fso-eventing'); ?></b><?php the_field('level'); ?></p>
     </div>
     <div class="exc-footer">
-      <a class="read-more" href="<?php the_permalink(); ?>">Read More &raquo;</a>
+      <a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read More', 'fso-eventing'); ?> &raquo;</a>
     </div>
   </div>
 </article>

@@ -63,7 +63,7 @@
 
 	<aside id="horses-sidebar" class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
 		<header class="sidebar-header">
-			<h1 class="sidebar-title"><?php _e('HORSES'); ?></h1>
+			<h1 class="sidebar-title"><?php _e('HORSES', 'fso-eventing'); ?></h1>
 		</header>
 		<?php if ( is_active_sidebar( 'horses-sidebar' ) ) : ?>
 			<div class="sidebar-content">

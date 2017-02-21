@@ -45,7 +45,7 @@ class FSO_SHL_Widget extends WP_Widget {
       <div class="all-horses">
         <ul class="wiget_area">
           <li class="c wiget widget_archive">
-            <h2 class="widget-title"><?php echo $title; ?></h2>
+            <h2 class="widget-title"><?php _e('Horses for sale', 'fso-eventing'); ?></h2>
             <?php	while ( $sales_horses->have_posts() ) : $sales_horses->the_post(); ?>
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
             <?php endwhile;  ?>
@@ -104,7 +104,7 @@ class FSO_OHL_Widget extends WP_Widget {
       <div class="all-horses">
         <ul class="wiget_area">
           <li class="c wiget widget_archive">
-            <h2 class="widget-title"><?php echo $title ?></h2>
+            <h2 class="widget-title"><?php _e('Our horses', 'fso-eventing'); ?></h2>
             <?php	while ( $our_horses->have_posts() ) : $our_horses->the_post(); ?>
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
             <?php endwhile;  ?>

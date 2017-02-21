@@ -40,7 +40,7 @@
 							<p class="post-date dt-published">Posted at: <?php the_date(); ?></p>
 							<div class=""><?php the_excerpt(); ?></div>
 							<div class="exc-footer">
-								<a class="read-more" href="<?php the_permalink(); ?>">Read More &raquo;</a>
+								<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read More', 'fso-eventing'); ?>&raquo;</a>
 							</div>
 						</div>
 					</article>
@@ -49,7 +49,7 @@
 				<?php $i++; ?>
 			<?php endwhile; else : ?>
 				<div class="not-found">
-					<h5><?php _e( 'Ouups, nothing foud here!' , 'fso-eventing'); ?></h5>
+					<h5><?php _e( 'Ouups, nothing foud here!' , 'fso-eventing' ); ?></h5>
 				</div>
 		<?php endif; ?>
 	</section>
