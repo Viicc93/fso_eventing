@@ -7,6 +7,10 @@ class MBPBForm {
     $this->ajax = new MBPBAjax;
     // Add admin page for plugin
     add_action('admin_menu', array(&$this, 'mbpb_menu_page'));
+    // Enqueue admin scripts and css
+    add_action('admin_enqueue_scripts', array(&$this, 'mbpb_enqueue_admin_scripts'));
+    // Enqueue scripts and css
+    add_action('wp_enqueue_scripts', array(&$this, 'mbpb_enqueue_scripts') );
     // add script for media uploader to admin footer
     add_action( 'admin_footer',array(&$this, 'media_selector_print_scripts') );
   }
@@ -83,7 +87,16 @@ class MBPBForm {
          <?php
      }
   }
+  // Enqueue admin scripts and css
+  public function mbpb_enqueue_admin_scripts() {
+    wp_enqueue_style('mbpb_admin_style', plugins_url('../css/admin_style.css', __FILE__));
+  }
 
+  // Enqueue scripts and css
+  function mbpb_enqueue_scripts() {
+    wp_enqueue_script('mbpb_script', plugins_url('../js/mbpbscript.js', __FILE__), array('jquery'));
+    wp_enqueue_style('mbpb_style', plugins_url('../css/style.css', __FILE__));
+  }
 
   // Add javascript for media uploader
   function media_selector_print_scripts() {

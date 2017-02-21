@@ -1,0 +1,10 @@
+.mbpb-content {
+  float: left;
+  padding: 40px;
+}
+.mbpb-content img {
+  width: 100%;
+}
+.mbpb-powered-by {
+  overflow: hidden;
+}
