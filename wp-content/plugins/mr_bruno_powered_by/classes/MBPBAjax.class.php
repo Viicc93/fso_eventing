@@ -55,4 +55,13 @@ class MBPBAjax {
     //var_dump($all_sponsors);die;
     return $all_sponsors;
   }
+
+  // function to get the selected sponsor from database with the id and delete it
+  public function delete_sponsor($id) {
+    MBPBAjax::setup_wpdb();
+    $table_name = MBPBAjax::$prefix_table_name;
+
+    $result = MBPBAjax::$wpdb->get_results ( "DELETE FROM $table_name WHERE id=".$id );
+    return $result;
+  }
 }

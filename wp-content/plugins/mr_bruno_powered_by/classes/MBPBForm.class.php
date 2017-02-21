@@ -23,9 +23,13 @@ class MBPBForm {
     if(isset($_POST['submit_mbpb'])){
       $this->ajax->mbpb_save_in_database();
     }
+    // if action delete, delete sponsor
+    if(isset($_GET['action']) == 'delete' && isset($_GET['id'])) {
+      $this->ajax->delete_sponsor($_GET['id']);
+    }
     // render upload form
     $this->mbpb_upload_form();
-    $this->mbpb_render_sponsors();
+    $this->mbpb_list_sponsors();
   }
 
   // Upload form on admin page
@@ -65,7 +69,7 @@ class MBPBForm {
 
   }
 
-  public function mbpb_render_sponsors() {
+  public function mbpb_list_sponsors() {
     $all_sponsors = $this->ajax->mbpb_get_from_database();
 
     foreach($all_sponsors as $sponsor) {
@@ -74,6 +78,7 @@ class MBPBForm {
          <div class="mbpb-row">
            <img class="mbpb-row-img" src="<?php echo $sponsor['img'][0]; ?>" />
            <h2 class="mbpb-row-title"><?php  echo $sponsor['name']; ?></h2><a class="mbpb-row-link" url="<?php echo $sponsor['url']; ?>" target="_blank"><?php echo $sponsor['url']; ?></a>
+           <a class="mbpb-row-button" href="admin.php?page=powered_by&id=<?php  echo $sponsor['id']; ?>&action=delete">Löschen</a>
          </div>
          <?php
      }
