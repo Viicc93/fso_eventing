@@ -1,15 +1,20 @@
 p {
   font-size: $text-sm;
-  font-family: 'Roboto', sans-serif;
+  font-family: $text-font !important;
 }
 h1, h2, h3 ,h4, h5, h6 {
   font-size: $heading-sm;
   color: $main-color;
-  font-family: 'Oswald', sans-serif;
+  font-family: $heading-font !important;
 }
 a {
   color: $link-color;
+  &:hover {
+    color: $link-hover-color;
+  }
 }
+
+
 @media all and (min-width: $screen-xs) {
   p {
     font-size: $text-md;

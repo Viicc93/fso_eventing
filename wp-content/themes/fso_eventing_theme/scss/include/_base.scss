@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 }
 body {
-	  
+
 }
 #fso-wrapper {
 	max-width: 1280px;
@@ -42,4 +42,8 @@ body {
 	margin-bottom: $space-sm;
 	border-radius: 4px;
 	width: 75px;
+}
+
+.vc_icon_element-icon:hover {
+	color: $secondary-color !important;
 }
