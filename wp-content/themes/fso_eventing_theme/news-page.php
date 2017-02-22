@@ -18,7 +18,7 @@
 						<?php endif; ?>
 						<div class="content">
 							<h2 class ="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p class="post-date dt-published"> <?php _e('Posted at: ', 'fso-eventing'); ?><?php the_date(); ?></p>
+							<p class="post-date dt-published"><?php the_date(); ?></p>
 							<div class=""><?php the_content(); ?></div>
 							<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(); ?></span>
 						</div>
@@ -40,7 +40,7 @@
 							<div class="content-wide">
 						<?php endif; ?>
 							<h2 class ="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p class="post-date dt-published"><?php _e('Posted at: ', 'fso-eventing'); ?>: <?php the_date(); ?></p>
+							<p class="post-date dt-published"><?php the_date(); ?></p>
 							<div class=""><?php the_excerpt(); ?></div>
 							<div class="exc-footer">
 								<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(); ?></span>
@@ -53,7 +53,7 @@
 				<?php $i++; ?>
 			<?php endwhile; else : ?>
 				<div class="not-found">
-					<h5><?php _e( 'Ouups, nothing foud here!' , 'fso-eventing' ); ?></h5>
+					<h5><?php _e( 'Ouups! Nothing found here!' , 'fso-eventing' ); ?></h5>
 				</div>
 		<?php endif; ?>
 	</section>
