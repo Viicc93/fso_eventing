@@ -1,6 +1,16 @@
 		<footer class="fso-footer">
 			<?php if ( is_active_sidebar( 'footer-wigets' ) ) : ?>
 				<div id="footer-wigets" class="footer-widgets widget-area " role="complementary">
+					<?php
+		        wp_nav_menu( array(
+		            'menu' => 'languagenav',
+		            'container' => false,
+		            'menu_id' => 'language-nav-footer',
+		            'menu_class' => 'language-nav',
+		            'theme_location' => 'languagenav'
+		          )
+		        );
+					 ?>
 					<?php dynamic_sidebar( 'footer-wigets' ); ?>
 				</div>
 			<?php endif; ?>

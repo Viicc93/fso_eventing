@@ -16,6 +16,20 @@
       overflow: auto;
       margin-bottom: 110px;
       padding-left: $space-sm;
+      position: relative;
+      #language-nav-footer {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        li {
+          display: inline;
+        }
+        .wpml-ls-menu-item .wpml-ls-flag {
+          width: 35px;
+          height: 22px;
+          border: 1px solid #fff;
+        }
+      }
     }
 }
 
