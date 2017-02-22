@@ -77,9 +77,9 @@ class FSO_ADDRESS_Widget extends WP_Widget {
       <div class="fso-address">
         <h2 class="widget-title"><?php _e('Address','fso-eventing' ); ?></h2>
           <p class="h-card">
-            <span class="p-name"><?php echo $the_name; ?></span>
-            <span class="p-street-address"><?php echo $street_address; ?></span>
-            <span class="p-locality"><?php echo $postal_code . ' ' . $locality; ?></span>
+            <span class="p-name"><?php echo $the_name; ?></span><br/>
+            <span class="p-street-address"><?php echo $street_address; ?></span><br/>
+            <span class="p-locality"><?php echo $postal_code . ' ' . $locality; ?></span><br/>
             <span class="p-country-name"><?php echo _e($country, 'fso-eventing'); ?></span>
           </p>
       </div>
