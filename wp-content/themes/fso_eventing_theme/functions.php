@@ -2,6 +2,7 @@
 require_once('wp_bootstrap_navwalker.php');
 
 include 'include/horse-list-widgets.php';
+include 'include/address-widget.php';
 
 function fso_enqueue_scripts() {
   // Enqueue Scripts
