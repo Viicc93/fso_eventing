@@ -5,17 +5,17 @@
     border-color: $border-color;
     border-radius: 0 0 4px 4px;
     overflow: hidden;
-    color: #eee;
+    color: #ccc;
+    .widget-title {
+      color: #ccc;
+    }
     li {
       list-style-type: none;
-    }
-    h2.widget-title {
-      color: #eee;
     }
     .footer-widgets {
       overflow: auto;
       margin-bottom: 110px;
-      padding-left: $space-sm;
+      padding: $space-md;
       position: relative;
       #language-nav-footer {
         position: absolute;
@@ -46,11 +46,11 @@
   .footer-widgets {
     overflow: hidden;
     .widget {
-      margin-top: 50px;
-      width: 25%;
+      margin-top: 30px;
+      width: 33%;
       display: inline;
       float: right;
-      padding-right: $space-sm;
+      padding-right: $space-md;
       p {
         margin-bottom: 0;
       }
