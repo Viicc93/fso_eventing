@@ -112,6 +112,22 @@ function fso_init() {
 }
 add_action( 'init', 'fso_init' );
 
+$custom_header = array(
+    'width'         => 1280,
+    'height'        => 400,
+    'default-image' => get_template_directory_uri() . '/img/ostholt_eventing_banner.jpg',
+);
+add_theme_support( 'custom-header', $custom_header );
+
+$header_images = array(
+    'fso' => array(
+            'url'           => get_template_directory_uri() . '/img/ostholt_eventing_banner.jpg',
+            'thumbnail_url' => get_template_directory_uri() . '/img/ostholt_eventing_banner.jpg',
+            'description'   => 'Ostholt Eventing',
+    ),
+);
+register_default_headers( $header_images );
+
 /*
  * Hide WP Version
  */

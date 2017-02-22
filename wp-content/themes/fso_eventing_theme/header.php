@@ -17,15 +17,15 @@
          <?php language_nav(); ?>
       </div>
     <?php else: ?>
-      <?php if ( has_post_thumbnail() ) : ?>
-        <div class="hero-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
-          <?php language_nav(); ?>
-        </div>
-      <?php else: ?>
-        <div class="hero-img" style="background-image: url('http://localhost:8888/fso_eventing/wp-content/themes/fso_eventing_theme/img/logo.jpg');">
-          <?php language_nav(); ?>
-        </div>
-      <?php endif; ?>
+        <?php if ( is_singular('fso-horses') || is_singular('post') || !has_post_thumbnail() ) : ?>
+          <div class="hero-img" style="background-image: url('<?php header_image(); ?>');">
+            <?php language_nav(); ?>
+          </div>
+        <?php else: ?>
+          <div class="hero-img" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
+            <?php language_nav(); ?>
+          </div>
+        <?php endif; ?>
     <?php endif; ?>
 
     <?php include 'include/navigation.php'; ?>
