@@ -14,7 +14,7 @@ class FSO_SHL_Widget extends WP_Widget {
     }
     ?>
       <p>
-        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'fso-eventing' ); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
       </p>
     <?php
@@ -45,7 +45,7 @@ class FSO_SHL_Widget extends WP_Widget {
       <div class="all-horses">
         <ul class="wiget_area">
           <li class="c wiget widget_archive">
-            <h2 class="widget-title"><?php _e('Horses for sale', 'fso-eventing'); ?></h2>
+            <h2 class="widget-title"><?php echo $title; ?></h2>
             <?php	while ( $sales_horses->have_posts() ) : $sales_horses->the_post(); ?>
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
             <?php endwhile;  ?>
@@ -72,7 +72,7 @@ class FSO_OHL_Widget extends WP_Widget {
     }
     ?>
       <p>
-        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
+        <label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'fso-eventing' ); ?></label>
         <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
       </p>
     <?php
@@ -104,7 +104,7 @@ class FSO_OHL_Widget extends WP_Widget {
       <div class="all-horses">
         <ul class="wiget_area">
           <li class="c wiget widget_archive">
-            <h2 class="widget-title"><?php _e('Our horses', 'fso-eventing'); ?></h2>
+            <h2 class="widget-title"><?php echo $title; ?></h2>
             <?php	while ( $our_horses->have_posts() ) : $our_horses->the_post(); ?>
               <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a><br>
             <?php endwhile;  ?>

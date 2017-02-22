@@ -10,11 +10,10 @@
 						<div class="e-content"><?php the_content(); ?></div>
 				</div>
 			</article>
-  	<?php endwhile; else : ?>
-    	<p><?php _e( 'No Posts' , 'fso-eventing'); ?></p>
+  	<?php endwhile;?>
 	<?php endif; ?>
 			<div class="latest-news">
-				<h1><?php _e('LATEST NEWS'); ?></h1>
+				<h1><?php _e('Latest News', 'fso-eventing'); ?></h1>
 				<?php include 'include/latest-news.php'; ?>
 			</div>
   	<?php	while ( have_posts() ) : the_post(); ?>

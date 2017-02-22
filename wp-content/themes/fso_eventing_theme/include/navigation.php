@@ -1,5 +1,4 @@
 <header>
-  <!--<div id="logo" style="background-image: url('<?php bloginfo('url'); ?>/wp-content/themes/fso_eventing_theme/img/logo.jpg');"></div>-->
   <div class="info"></div>
     <nav class="navbar navbar-default" role="navigation">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,7 +9,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="<?php bloginfo('url')?>"><img src="<?php echo content_url(); ?>/themes/fso_eventing_theme/img/logo_fso.png" alt=""></a>
+            <a class="navbar-brand" title="Ostholt Eventing" href="<?php bloginfo('url')?>"><img class="u-logo" src="<?php echo content_url(); ?>/themes/fso_eventing_theme/img/logo_fso.png" alt="Ostholt Eventing Logo"></a>
           </div>
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse navbar-ex1-collapse">

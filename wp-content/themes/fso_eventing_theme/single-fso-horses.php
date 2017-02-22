@@ -65,14 +65,21 @@
 			</article>
 		<?php endwhile; else: ?>
 			<div class="not-found">
-				<p><?php _e( 'No horse was found here' , 'fso-eventing'); ?></p>
+				<h5><?php _e( 'Ouups! Nothing found here!' , 'fso-eventing'); ?></h5>
+				<p>
+					<?php _e('I screwed up and you discovered my fatal flaw.
+										Well, we\'re not all perfect, but we try.  Can you try this
+										again or maybe visit our ', 'fso-eventing'); ?>
+					<a title="Ostholt Eventing" href="<?php bloginfo('url'); ?>"><?php _e('Home Page', 'fso-eventing') ?></a>
+					<?php _e(' to start fresh.  We\'ll do better next time.', 'fso-eventing'); ?>
+				</p>
 			</div>
 		<?php endif; ?>
 	</div>
 
 	<aside id="horses-sidebar" class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
 		<header class="sidebar-header">
-			<h1 class="sidebar-title">HORSES</h1>
+			<h1 class="sidebar-title"><?php _e('Horses', 'fso-eventing'); ?></h1>
 		</header>
 		<?php if ( is_active_sidebar( 'horses-sidebar' ) ) : ?>
 		<div class="sidebar-content">

@@ -20,7 +20,7 @@
         <div class="content-wide">
       <?php endif; ?>
         <h2 class ="post-title p-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-        <p class="post-date dt-published">Posted at: <?php the_date(); ?></p>
+        <p class="post-date dt-published"><?php _e('Posted at: ', 'fso-eventing'); ?> <?php the_date(); ?></p>
         <div class="p-summary"><?php the_excerpt(); ?></div>
         <div class="exc-footer">
           <a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read More', 'fso-eventing'); ?> &raquo;</a>
@@ -29,6 +29,6 @@
     </article>
   <?php endwhile; else: ?>
     <div class="not-found">
-      <p><?php _e( 'No post was found here' , 'fso-eventing'); ?></p>
+      <p><?php _e( 'Ouups, no latest news was found...' , 'fso-eventing'); ?></p>
     </div>
 <?php endif; ?>

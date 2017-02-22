@@ -11,13 +11,16 @@
 				<?php if ($i === 0 ): ?>
 
 					<article class="hero-post h-entry">
-						<div class="thumbnail">
-							<img class="u-photo" src="<?php the_post_thumbnail_url(); ?>"></img>
-						</div>
+						<?php if ( has_post_thumbnail() ) : ?>
+							<div class="thumbnail">
+								<img class="u-photo" src="<?php the_post_thumbnail_url(); ?>"></img>
+							</div>
+						<?php endif; ?>
 						<div class="content">
 							<h2 class ="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p class="post-date dt-published">Posted at: <?php the_date(); ?></p>
+							<p class="post-date dt-published"> <?php _e('Posted at: ', 'fso-eventing'); ?><?php the_date(); ?></p>
 							<div class=""><?php the_content(); ?></div>
+							<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(); ?></span>
 						</div>
 					</article>
 
@@ -37,9 +40,10 @@
 							<div class="content-wide">
 						<?php endif; ?>
 							<h2 class ="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p class="post-date dt-published">Posted at: <?php the_date(); ?></p>
+							<p class="post-date dt-published"><?php _e('Posted at: ', 'fso-eventing'); ?>: <?php the_date(); ?></p>
 							<div class=""><?php the_excerpt(); ?></div>
 							<div class="exc-footer">
+								<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(); ?></span>
 								<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read More', 'fso-eventing'); ?>&raquo;</a>
 							</div>
 						</div>
@@ -56,7 +60,7 @@
 	<aside id="news-sidebar" class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
 		<?php if ( is_active_sidebar( 'news-sidebar' ) ) : ?>
 			<header class="sidebar-header">
-				<h1 class="sidebar-title">NEWS</h1>
+				<h1 class="sidebar-title"><?php _e('News', 'fso-eventing'); ?></h1>
 			</header>
 			<div class="sidebar-content">
 				<ul class="c widget-area" role="complementary">

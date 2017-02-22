@@ -9,7 +9,13 @@
 			</article>
 		<?php endwhile; else : ?>
 			<div class="not-found">
-				<p><?php _e( 'No page was found here' , 'fso-eventing'); ?></p>
+				<h5><?php _e( 'Ouups! Nothing found here!' , 'fso-eventing'); ?></h5>
+				<p><?php _e('I screwed up and you discovered my fatal flaw.
+										Well, we\'re not all perfect, but we try.  Can you try this
+										again or maybe visit our <a
+										title="Our Site" href="'. bloginfo('url') .'">Home
+										Page</a> to start fresh.  We\'ll do better next time.') ?>
+				</p>
 			</div>
 	<?php endif; ?>
 </div>
