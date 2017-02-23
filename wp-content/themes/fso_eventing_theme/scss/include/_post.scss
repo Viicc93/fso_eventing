@@ -1,6 +1,7 @@
-.post, .hero-post {
+.post {
 	border-bottom: 1px solid #eee;
 	margin-bottom: $space-xs;
+	overflow: auto;
 }
 .posts {
 	padding-top: $space-md;
@@ -11,7 +12,9 @@
 		color: $main-heading-color;
 	}
 }
-
+.exc-footer {
+	width: 100%;
+}
 .single-img {
 	&.thumbnail {
 		margin: auto;
@@ -36,16 +39,22 @@
 .read-more {
 	font-size: $text-sm;
 	color: $link-color;
+	float: right;
 }
-
 .latest-news {
 	width: 90%;
 	margin: $space-sm auto;
 }
+.prev-next-posts {
+	padding: $space-sm 0;
+	text-align: center;
+}
 @media all and (min-width: $screen-xs) {
 	.post {
 		overflow: hidden;
+		position: relative;
 		clear: both;
+		padding-bottom: $space-lg;
 		margin-bottom: $space-sm;
 		.post-img {
 			width: 40%;
@@ -57,17 +66,21 @@
 			padding-left: $space-sm;
 		}
 		.read-more {
-			float: right;
-			padding-bottom: $space-xxs;
-			padding-right: $space-xxs;
+			padding: $space-xxs;
 		}
 		.post-date {
 				font-size: 14px;
+		}
+		.exc-footer {
+			width: 55%;
+			position: absolute;
+			bottom: 10px;
 		}
 	}
 }
 
 @media all and (min-width: $screen-sm) {
+
 	.read-more {
 		font-size: $text-lg;
 	}

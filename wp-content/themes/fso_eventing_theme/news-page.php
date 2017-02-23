@@ -1,31 +1,13 @@
 <?php /* Template Name: All News */ ?>
 <?php get_header(); ?>
 
-<?php $i = 0; ?>
-<?php $allPosts = new WP_Query( array('post_type' => 'post')); ?>
+<?php $allPosts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => 3)); ?>
 
 <div class="main-content">
 	<section class="posts col-xs-12 col-sm-12 col-md-8 col-lg-8">
 		<?php if ( $allPosts->have_posts() ) : ?>
+			<h1 class="p-name"><?php the_title(); ?></h1>
 			<?php	while ( $allPosts->have_posts() ) : $allPosts->the_post(); ?>
-				<?php if ($i === 0 ): ?>
-
-					<article class="hero-post h-entry">
-						<?php if ( has_post_thumbnail() ) : ?>
-							<div class="thumbnail">
-								<img class="u-photo" src="<?php the_post_thumbnail_url(); ?>"></img>
-							</div>
-						<?php endif; ?>
-						<div class="content">
-							<h2 class ="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p class="post-date dt-published"><?php the_date(); ?></p>
-							<div class=""><?php the_content(); ?></div>
-							<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(); ?></span>
-						</div>
-					</article>
-
-				<?php else: ?>
-
 					<article class="post h-entry">
 						<?php if ( has_post_thumbnail() ) : ?>
               <div class="post-img">
@@ -48,10 +30,20 @@
 							</div>
 						</div>
 					</article>
+			<?php endwhile; ?>
 
-				<?php endif ?>
-				<?php $i++; ?>
-			<?php endwhile; else : ?>
+			<?php if ($allPosts->max_num_pages > 1) {  ?>
+			  <nav class="prev-next-posts">
+			    <div class="prev-posts-link">
+			      <?php echo get_next_posts_link( __('Older Entries &raquo;', 'fso-eventing'), $allPosts->max_num_pages ); ?>
+			    </div>
+			    <div class="next-posts-link">
+			      <?php echo get_previous_posts_link( __('Newer Entries &raquo;', 'fso-eventing') ); ?>
+			    </div>
+			  </nav>
+			<?php } ?>
+
+		<?php else : ?>
 				<div class="not-found">
 					<h5><?php _e( 'Ouups! Nothing found here!' , 'fso-eventing' ); ?></h5>
 				</div>
