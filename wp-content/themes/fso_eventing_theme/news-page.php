@@ -4,11 +4,11 @@
 <?php $allPosts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => 10)); ?>
 
 <div class="main-content">
+	<?php if ( $allPosts->have_posts() ) : ?>
+		<article class="fso-page panel">
+			<h1 class="p-name"><?php the_title(); ?></h1>
+		</article>
 	<section class="posts col-xs-12 col-sm-12 col-md-8 col-lg-8">
-		<?php if ( $allPosts->have_posts() ) : ?>
-			<article class="fso-page">
-				<h1 class="p-name"><?php the_title(); ?></h1>
-			</article>
 			<?php	while ( $allPosts->have_posts() ) : $allPosts->the_post(); ?>
 					<article class="post h-entry">
 						<?php if ( has_post_thumbnail() ) : ?>

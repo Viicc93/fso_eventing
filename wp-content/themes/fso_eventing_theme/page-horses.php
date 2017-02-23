@@ -28,18 +28,17 @@
 ?>
 
 <div class="main-content">
-	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 	<!-- PAGE CONTENT FOR HORSE PAGE -->
 		<?php if ( have_posts() ) : ?>
 			<?php	while ( have_posts() ) : the_post(); ?>
-				<article class="fso-page h-entry">
+				<article class=" fso-page panel h-entry">
 					<h1 class="p-name"><?php the_title(); ?></h1>
 					<div class="e-content"><?php the_content(); ?></div>
 				</article>
 			<?php endwhile; else : ?>
 				<p><?php _e( 'No Posts' , 'fso-eventing'); ?></p>
 		<?php endif; ?>
-		<div class="posts horses h-entry">
+		<div class="posts horses h-entry col-xs-12 col-sm-12 col-md-8 col-lg-8">
 
 			<!-- HORSES -->
 			<h2><?php _e('Our horses', 'fso-eventing'); ?></h2>
