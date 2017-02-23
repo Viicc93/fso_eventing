@@ -27,22 +27,25 @@
 	<div class="fso-page col-xs-12 col-sm-12 col-md-8 col-lg-8">
 		<?php if (have_posts()): ?>
 		<?php	while ( have_posts() ) : the_post(); ?>
-			<?php
-				// CHECK IF IMAGE IS HORIZONTAL OR VERTICAL
-				$filename = get_the_post_thumbnail_url();
-				$size = getimagesize($filename);
-				$image_size = "horizontal-image";
-				if ($size[0] < $size[1]) {
-					$image_size = "vertical-image";
-				}
-			?>
+			<?php if (has_post_thumbnail()): ?>
+				<?php
+					$filename = get_the_post_thumbnail_url();
+					$size = getimagesize($filename);
+					$image_size = "horizontal-image";
+					if ($size[0] < $size[1]) {
+						$image_size = "vertical-image";
+					}
+				?>
+			<?php endif; ?>
 
 		<button class="fso-button" value="" onclick="history.back(-1)" /><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
 
 			<article class="horse h-entry panel">
-				<div class="thumbnail u-photo single-img  <?php echo  $image_size; ?>">
-					<img class="u-photo" src="<?php the_post_thumbnail_url(); ?>"></img>
-				</div>
+				<?php if (has_post_thumbnail()): ?>
+					<div class="thumbnail u-photo single-img  <?php echo  $image_size; ?>">
+						<img class="u-photo" src="<?php the_post_thumbnail_url(); ?>"></img>
+					</div>
+				<?php endif; ?>
 				<h1 class="p-name"><?php the_title(); ?></h1>
 				<div class="horse-tags">
 				 <p><b class="horse-tag p-category"><?php _e('Year: ', 'fso-eventing'); ?></b><?php the_field('year'); ?></p>
