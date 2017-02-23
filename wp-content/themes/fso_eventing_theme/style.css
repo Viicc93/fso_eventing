@@ -222,17 +222,21 @@ a {
       font-size: 100px;
       padding: 150px 0; } }
 
-.post, .hero-post {
+.post {
   border-bottom: 1px solid #eee;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  overflow: auto; }
 
 .posts {
   padding-top: 35px; }
 
 .post-title {
-  margin: 0; }
+  margin-top: 0; }
   .post-title a {
     color: #063257; }
+
+.exc-footer {
+  width: 100%; }
 
 .single-img.thumbnail {
   margin: auto; }
@@ -246,22 +250,34 @@ a {
   .post-categories li {
     display: inline; }
 
+.full-post .post-date {
+  margin-bottom: 20px; }
+
 .post-date {
   margin: 3px 0;
-  color: #777; }
+  color: #bbb;
+  font-style: italic;
+  font-weight: 100; }
 
 .read-more {
   font-size: 14px;
-  color: #883939; }
+  color: #883939;
+  float: right; }
 
 .latest-news {
   width: 90%;
   margin: 20px auto; }
 
+.prev-next-posts {
+  padding: 20px 0;
+  text-align: center; }
+
 @media all and (min-width: 460px) {
   .post {
     overflow: hidden;
+    position: relative;
     clear: both;
+    padding-bottom: 50px;
     margin-bottom: 20px; }
     .post .post-img {
       width: 40%;
@@ -271,11 +287,13 @@ a {
       float: left;
       padding-left: 20px; }
     .post .read-more {
-      float: right;
-      padding-bottom: 5px;
-      padding-right: 5px; }
+      padding: 5px; }
     .post .post-date {
-      font-size: 14px; } }
+      font-size: 14px; }
+    .post .exc-footer {
+      width: 55%;
+      position: absolute;
+      bottom: 10px; } }
 
 @media all and (min-width: 768px) {
   .read-more {
@@ -290,6 +308,9 @@ a {
 .horse-tags p b {
   color: #063257;
   font-size: 12px; }
+
+.horse-tag {
+  color: #063257; }
 
 .horse-images {
   border-top: 1px solid #eee;

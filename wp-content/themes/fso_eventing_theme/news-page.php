@@ -6,7 +6,9 @@
 <div class="main-content">
 	<section class="posts col-xs-12 col-sm-12 col-md-8 col-lg-8">
 		<?php if ( $allPosts->have_posts() ) : ?>
-			<h1 class="p-name"><?php the_title(); ?></h1>
+			<article class="fso-page">
+				<h1 class="p-name"><?php the_title(); ?></h1>
+			</article>
 			<?php	while ( $allPosts->have_posts() ) : $allPosts->the_post(); ?>
 					<article class="post h-entry">
 						<?php if ( has_post_thumbnail() ) : ?>
@@ -25,7 +27,7 @@
 							<p class="post-date dt-published"><?php the_date(); ?></p>
 							<div class=""><?php the_excerpt(); ?></div>
 							<div class="exc-footer">
-								<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(); ?></span>
+								<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(', '); ?></span>
 								<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read More ', 'fso-eventing'); ?>&raquo;</a>
 							</div>
 						</div>

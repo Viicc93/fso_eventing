@@ -7,7 +7,7 @@
 	padding-top: $space-md;
 }
 .post-title {
-	margin: 0;
+	margin-top: 0;
 	a {
 		color: $main-heading-color;
 	}
@@ -32,9 +32,16 @@
 		display: inline;
 	}
 }
+.full-post {
+	.post-date {
+			margin-bottom: $space-sm;
+	}
+}
 .post-date {
 		margin: 3px 0;
-		color: $grey;
+		color: #bbb;
+		font-style: italic;
+		font-weight: 100;
 }
 .read-more {
 	font-size: $text-sm;

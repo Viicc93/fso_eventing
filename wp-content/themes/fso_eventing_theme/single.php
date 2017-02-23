@@ -17,6 +17,7 @@
 
 			<button class="fso-button" value="" onclick="history.back(-1)" /><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
 				<article class="h-entry full-post panel">
+					<p class="post-date dt-published"><?php the_date(); ?></p>
 				<?php if (has_post_thumbnail()): ?>
 					<div class="thumbnail single-img <?php echo  $image_size; ?>">
 						<img class="u-photo" src="<?php the_post_thumbnail_url(); ?>"></img>
@@ -25,7 +26,7 @@
 					<h1 class="p-name"><?php the_title(); ?></h1>
   				<div class="e-content"><?php the_content(); ?></div>
 					<p class="post-date dt-published"><?php the_date(); ?></p>
-					<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(); ?></span>
+					<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(', '); ?></span>
 				</article>
 		<?php endwhile; else: ?>
 				<div class="not-found">
