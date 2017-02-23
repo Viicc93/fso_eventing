@@ -7,6 +7,9 @@
     }
   }
 }
+.horse-tag {
+  color: $main-color;
+}
 .horse-images {
   border-top: 1px solid #eee;
   border-bottom: 1px solid #eee;
@@ -14,7 +17,7 @@
   overflow: hidden;
   display: table;
   margin: $space-sm auto;
- img{
+ img {
     height: 75px;
     width: auto;
     margin: 2px;
