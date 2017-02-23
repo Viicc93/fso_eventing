@@ -1,7 +1,7 @@
 <?php /* Template Name: All News */ ?>
 <?php get_header(); ?>
 
-<?php $allPosts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => 3)); ?>
+<?php $allPosts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => 10)); ?>
 
 <div class="main-content">
 	<section class="posts col-xs-12 col-sm-12 col-md-8 col-lg-8">
@@ -26,7 +26,7 @@
 							<div class=""><?php the_excerpt(); ?></div>
 							<div class="exc-footer">
 								<span class="categories"><?php _e('Categories:', 'fso-eventing') ?> <?php the_category(); ?></span>
-								<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read More', 'fso-eventing'); ?>&raquo;</a>
+								<a class="read-more" href="<?php the_permalink(); ?>"><?php _e('Read More ', 'fso-eventing'); ?>&raquo;</a>
 							</div>
 						</div>
 					</article>
@@ -38,7 +38,7 @@
 			      <?php echo get_next_posts_link( __('Older Entries &raquo;', 'fso-eventing'), $allPosts->max_num_pages ); ?>
 			    </div>
 			    <div class="next-posts-link">
-			      <?php echo get_previous_posts_link( __('Newer Entries &raquo;', 'fso-eventing') ); ?>
+			      <?php echo get_previous_posts_link( __('&laquo; Newer Entries', 'fso-eventing') ); ?>
 			    </div>
 			  </nav>
 			<?php } ?>
