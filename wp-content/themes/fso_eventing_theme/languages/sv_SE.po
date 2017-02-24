@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fso-eventing\n"
-"POT-Creation-Date: 2017-02-22 16:48+0100\n"
-"PO-Revision-Date: 2017-02-22 16:49+0100\n"
+"POT-Creation-Date: 2017-02-24 11:22+0100\n"
+"PO-Revision-Date: 2017-02-24 11:22+0100\n"
 "Last-Translator: \n"
 "Language-Team: Victoria Johansson <victoriajohansson@hotmail.com>\n"
 "Language: sv\n"
@@ -44,7 +44,7 @@ msgid "Footer"
 msgstr "Sidfot"
 
 #: functions.php:90 functions.php:98 page-horses.php:66
-#: single-fso-horses.php:80
+#: single-fso-horses.php:83
 msgid "Horses"
 msgstr "Hästar"
 
@@ -66,7 +66,7 @@ msgstr "Uppdatera Häst"
 
 #: include/address-widget.php:5 include/address-widget.php:78
 msgid "Address"
-msgstr "adress"
+msgstr "Adress"
 
 #: include/address-widget.php:12
 msgid " "
@@ -136,23 +136,23 @@ msgstr "Lista våra hästar"
 msgid "Our Horses"
 msgstr "Våra hästar"
 
-#: include/horse.php:12 single-fso-horses.php:48
+#: include/horse.php:12 single-fso-horses.php:51
 msgid "Year: "
 msgstr "År:"
 
-#: include/horse.php:13 single-fso-horses.php:49
+#: include/horse.php:13 single-fso-horses.php:52
 msgid "Height: "
 msgstr "Mankhöjd:"
 
-#: include/horse.php:14 single-fso-horses.php:50
+#: include/horse.php:14 single-fso-horses.php:53
 msgid "Discipline: "
 msgstr "Disciplin:"
 
-#: include/horse.php:15 single-fso-horses.php:51
+#: include/horse.php:15 single-fso-horses.php:54
 msgid "Level: "
 msgstr "Nivå:"
 
-#: include/horse.php:18 include/latest-news.php:26 news-page.php:47
+#: include/horse.php:18 include/latest-news.php:26
 msgid "Read More"
 msgstr "Läs Mer"
 
@@ -160,12 +160,12 @@ msgstr "Läs Mer"
 msgid "Ouups! No latest news was found..."
 msgstr "Orups! Inga senaste nyheter hittades!"
 
-#: index.php:21 news-page.php:56 page.php:12 single-fso-horses.php:68
-#: single.php:32
+#: index.php:21 news-page.php:50 page.php:12 single-fso-horses.php:71
+#: single.php:33
 msgid "Ouups! Nothing found here!"
 msgstr "Ouup, här kunde inget hittas!"
 
-#: index.php:23 page.php:14 single-fso-horses.php:70 single.php:34
+#: index.php:23 page.php:14 single-fso-horses.php:73 single.php:35
 msgid ""
 "I screwed up and you discovered my fatal flaw. Well, we're not all perfect, "
 "but we try.  Can you try this again or maybe visit our "
@@ -174,19 +174,31 @@ msgstr ""
 "inte perfekta, men vi försöker. Kan du försöka på nytt eller kanske gå till "
 "vår "
 
-#: index.php:24 page.php:15 single-fso-horses.php:71 single.php:35
+#: index.php:24 page.php:15 single-fso-horses.php:74 single.php:36
 msgid "Home Page"
 msgstr "Startsida"
 
-#: index.php:25 page.php:16 single-fso-horses.php:72 single.php:36
+#: index.php:25 page.php:16 single-fso-horses.php:75 single.php:37
 msgid " to start fresh.  We'll do better next time."
 msgstr " för att börja om på nytt. Vi gör det bättre nästa gång."
 
-#: news-page.php:23 news-page.php:46 single.php:28
+#: news-page.php:30 single.php:29
 msgid "Categories:"
 msgstr "Kategorier:"
 
-#: news-page.php:63 single.php:45
+#: news-page.php:31
+msgid "Read More "
+msgstr "Läs mer"
+
+#: news-page.php:40
+msgid "Older Entries &raquo;"
+msgstr "Äldre inlägg &raquo;"
+
+#: news-page.php:43
+msgid "&laquo; Newer Entries"
+msgstr "&laquo; Nyare inlägg"
+
+#: news-page.php:57 single.php:46
 msgid "News"
 msgstr "Nyheter"
 
