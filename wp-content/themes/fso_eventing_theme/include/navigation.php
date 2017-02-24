@@ -17,9 +17,10 @@
             <?php
                 wp_nav_menu( array(
                     'menu' => 'primarynav',
+                    'menu_id' => 'primary-nav',
                     'depth' => 2,
                     'container' => false,
-                    'menu_class' => 'nav',
+                    'menu_class' => 'nav navbar-nav',
                     'walker' => new wp_bootstrap_navwalker())
                 );
             ?>

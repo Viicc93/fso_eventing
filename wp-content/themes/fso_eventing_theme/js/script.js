@@ -1,8 +1,5 @@
 $(document).ready(function(){
 
-	$('#menu-menu-1').addClass('nav navbar-nav');
-	$('#menu-menu-1-german').addClass('nav navbar-nav');
-	$('#menu-menu-1-swedish').addClass('nav navbar-nav');
 	$('.fancybox-thumbs').fancybox({
 			prevEffect : 'none',
 			nextEffect : 'none',
