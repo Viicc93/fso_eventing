@@ -6,7 +6,7 @@ $(document).ready(function(){
     $('.mbpb-content').css({"width": "20%"});
   }
   if ($('.mbpb-powered-by').width() < 501) {
-    $('.mbpb-content').css({"width": "50%"});
+    $('.mbpb-content').css({"width": "33%"});
   }
 $('.mbpb-content').hide();
 

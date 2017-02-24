@@ -22,7 +22,7 @@
       </div>
     <?php endwhile; ?>
 		<?php if ( is_active_sidebar( 'bottom-start' ) ) : ?>
-		<div class="sidebar-content">
+		<div id="bottom-start-page" class="sidebar-content">
 			<ul class="c widget-area" role="complementary">
 				<?php dynamic_sidebar( 'bottom-start' ); ?>
 			</ul>

@@ -13,3 +13,9 @@
 .mbpb-powered-by {
   overflow: hidden;
 }
+@media all and (max-width: 500px) {
+  .mbpb-content {
+    float: left;
+    padding: 10px;
+  }
+}

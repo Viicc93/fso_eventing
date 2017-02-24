@@ -390,6 +390,10 @@ a {
 .widget-title {
   font-size: 16px; }
 
+#bottom-start-page {
+  width: 90%;
+  margin: 20px auto; }
+
 @media all and (min-width: 768px) {
   .widget-title {
     font-size: 18px; } }

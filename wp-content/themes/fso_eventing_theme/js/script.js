@@ -29,7 +29,7 @@ $(document).ready(function(){
 		  distance : '90px',
 		  easing   : 'ease-in-out',
 		  rotate   : { z: 10 },
-		  scale    : 1.1
+		  //scale    : 1.1
 		};
 
 		window.sr = ScrollReveal();

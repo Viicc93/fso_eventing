@@ -38,6 +38,10 @@
 .widget-title {
   font-size: $heading-sm;
 }
+#bottom-start-page {
+  width: 90%;
+  margin: $space-sm auto;
+}
 @media all and (min-width: $screen-sm) {
   .widget-title {
     font-size: $heading-md;
