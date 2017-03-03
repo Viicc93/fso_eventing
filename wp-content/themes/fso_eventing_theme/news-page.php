@@ -1,7 +1,7 @@
 <?php /* Template Name: All News */ ?>
 <?php get_header(); ?>
-
-<?php $allPosts = new WP_Query( array('post_type' => 'post', 'posts_per_page' => 10)); ?>
+<?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
+<?php $allPosts = new WP_Query( array('post_type' => 'post', 'paged' => $paged, 'posts_per_page' => 5,)); ?>
 
 <div class="main-content">
 	<?php if ( $allPosts->have_posts() ) : ?>
