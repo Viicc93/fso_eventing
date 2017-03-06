@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fso-eventing\n"
-"POT-Creation-Date: 2017-02-24 11:22+0100\n"
-"PO-Revision-Date: 2017-02-24 11:22+0100\n"
+"POT-Creation-Date: 2017-03-06 14:28+0100\n"
+"PO-Revision-Date: 2017-03-06 14:30+0100\n"
 "Last-Translator: \n"
 "Language-Team: Victoria Johansson <victoriajohansson@hotmail.com>\n"
 "Language: sv\n"
@@ -15,52 +15,61 @@ msgstr ""
 "X-Poedit-KeywordsList: _e;_x;__\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: functions.php:30
+#: functions.php:33
 msgid "Primary Menu"
 msgstr "Primär Meny"
 
-#: functions.php:31
+#: functions.php:34
 msgid "Language Menu"
 msgstr "Språk Meny"
 
-#: functions.php:44
+#: functions.php:47
 msgid "News Sidebar"
 msgstr "Sidofält för nyheter"
 
-#: functions.php:46 functions.php:56 functions.php:66 functions.php:76
+#: functions.php:49 functions.php:59 functions.php:68 functions.php:77
+#: functions.php:86 functions.php:96
 msgid "Widget area."
 msgstr "Widget-fält"
 
-#: functions.php:54
+#: functions.php:57
 msgid "Horses Sidebar"
 msgstr "Hästar Sidebar"
 
-#: functions.php:64
+#: functions.php:66
+msgid "Our Horses Sidebar"
+msgstr "Våra hästar Sidebar"
+
+#: functions.php:75
+msgid "Sale Horses Sidebar"
+msgstr "Hästar till salu Sidebar"
+
+#: functions.php:84
 msgid "Bottom Start Page"
 msgstr "Botten startsida"
 
-#: functions.php:74
+#: functions.php:94
 msgid "Footer"
 msgstr "Sidfot"
 
-#: functions.php:90 functions.php:98 page-horses.php:66
-#: single-fso-horses.php:83
+#: functions.php:110 functions.php:118 page-horses.php:66
+#: page-our-horses.php:44 page-sale-horses.php:45 single-fso-horses.php:62
 msgid "Horses"
 msgstr "Hästar"
 
-#: functions.php:91
+#: functions.php:111
 msgid "Horse"
 msgstr "Häst"
 
-#: functions.php:92
+#: functions.php:112
 msgid "Add New"
 msgstr "Lägg till ny"
 
-#: functions.php:93
+#: functions.php:113
 msgid "Add New Horse"
 msgstr "Lägg till ny häst"
 
-#: functions.php:94
+#: functions.php:114
 msgid "Edit Horse"
 msgstr "Uppdatera Häst"
 
@@ -136,23 +145,27 @@ msgstr "Lista våra hästar"
 msgid "Our Horses"
 msgstr "Våra hästar"
 
-#: include/horse.php:12 single-fso-horses.php:51
+#: include/horse.php:13 single-fso-horses.php:29
 msgid "Year: "
 msgstr "År:"
 
-#: include/horse.php:13 single-fso-horses.php:52
+#: include/horse.php:14 single-fso-horses.php:31
+msgid "Gender: "
+msgstr "Kön:"
+
+#: include/horse.php:15 single-fso-horses.php:30
 msgid "Height: "
 msgstr "Mankhöjd:"
 
-#: include/horse.php:14 single-fso-horses.php:53
+#: include/horse.php:16 single-fso-horses.php:32
 msgid "Discipline: "
 msgstr "Disciplin:"
 
-#: include/horse.php:15 single-fso-horses.php:54
+#: include/horse.php:17 single-fso-horses.php:33
 msgid "Level: "
 msgstr "Nivå:"
 
-#: include/horse.php:18 include/latest-news.php:26
+#: include/horse.php:20 include/latest-news.php:26
 msgid "Read More"
 msgstr "Läs Mer"
 
@@ -160,12 +173,12 @@ msgstr "Läs Mer"
 msgid "Ouups! No latest news was found..."
 msgstr "Orups! Inga senaste nyheter hittades!"
 
-#: index.php:21 news-page.php:50 page.php:12 single-fso-horses.php:71
+#: index.php:21 news-page.php:50 page.php:12 single-fso-horses.php:50
 #: single.php:33
 msgid "Ouups! Nothing found here!"
 msgstr "Ouup, här kunde inget hittas!"
 
-#: index.php:23 page.php:14 single-fso-horses.php:73 single.php:35
+#: index.php:23 page.php:14 single-fso-horses.php:52 single.php:35
 msgid ""
 "I screwed up and you discovered my fatal flaw. Well, we're not all perfect, "
 "but we try.  Can you try this again or maybe visit our "
@@ -174,11 +187,11 @@ msgstr ""
 "inte perfekta, men vi försöker. Kan du försöka på nytt eller kanske gå till "
 "vår "
 
-#: index.php:24 page.php:15 single-fso-horses.php:74 single.php:36
+#: index.php:24 page.php:15 single-fso-horses.php:53 single.php:36
 msgid "Home Page"
 msgstr "Startsida"
 
-#: index.php:25 page.php:16 single-fso-horses.php:75 single.php:37
+#: index.php:25 page.php:16 single-fso-horses.php:54 single.php:37
 msgid " to start fresh.  We'll do better next time."
 msgstr " för att börja om på nytt. Vi gör det bättre nästa gång."
 
@@ -202,7 +215,7 @@ msgstr "&laquo; Nyare inlägg"
 msgid "News"
 msgstr "Nyheter"
 
-#: page-horses.php:39
+#: page-horses.php:39 page-our-horses.php:28 page-sale-horses.php:27
 msgid "No Posts"
 msgstr "Inga Inlägg"
 
@@ -210,11 +223,12 @@ msgstr "Inga Inlägg"
 msgid "Our horses"
 msgstr "Våra Hästar"
 
-#: page-horses.php:49 page-horses.php:59
+#: page-horses.php:49 page-horses.php:59 page-our-horses.php:36
+#: page-sale-horses.php:37
 msgid "No horses at the moment..."
 msgstr "Inga hästar för tillfället…"
 
-#: page-horses.php:53
+#: page-horses.php:53 page-sale-horses.php:31
 msgid "Horses for sale"
 msgstr "Hästar till salu"
 

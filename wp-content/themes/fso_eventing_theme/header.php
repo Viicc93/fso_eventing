@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.png" />
   <?php wp_head(); ?>
+  <title><?php bloginfo('name'); ?></title>
 </head>
 
 <body <?php body_class(); ?>>

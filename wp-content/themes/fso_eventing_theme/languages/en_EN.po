@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: fso-eventing\n"
-"POT-Creation-Date: 2017-02-22 16:46+0100\n"
-"PO-Revision-Date: 2017-02-22 16:46+0100\n"
+"POT-Creation-Date: 2017-03-06 14:24+0100\n"
+"PO-Revision-Date: 2017-03-06 14:24+0100\n"
 "Last-Translator: \n"
 "Language-Team: Victoria Johansson <victoriajohansson@hotmail.com>\n"
 "Language: en\n"
@@ -15,52 +15,61 @@ msgstr ""
 "X-Poedit-KeywordsList: _e;_x;__\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: functions.php:30
+#: functions.php:33
 msgid "Primary Menu"
 msgstr ""
 
-#: functions.php:31
+#: functions.php:34
 msgid "Language Menu"
 msgstr ""
 
-#: functions.php:44
+#: functions.php:47
 msgid "News Sidebar"
 msgstr ""
 
-#: functions.php:46 functions.php:56 functions.php:66 functions.php:76
+#: functions.php:49 functions.php:59 functions.php:68 functions.php:77
+#: functions.php:86 functions.php:96
 msgid "Widget area."
 msgstr ""
 
-#: functions.php:54
+#: functions.php:57
 msgid "Horses Sidebar"
 msgstr ""
 
-#: functions.php:64
+#: functions.php:66
+msgid "Our Horses Sidebar"
+msgstr ""
+
+#: functions.php:75
+msgid "Sale Horses Sidebar"
+msgstr ""
+
+#: functions.php:84
 msgid "Bottom Start Page"
 msgstr ""
 
-#: functions.php:74
+#: functions.php:94
 msgid "Footer"
 msgstr ""
 
-#: functions.php:90 functions.php:98 page-horses.php:66
-#: single-fso-horses.php:80
+#: functions.php:110 functions.php:118 page-horses.php:66
+#: page-our-horses.php:44 page-sale-horses.php:45 single-fso-horses.php:62
 msgid "Horses"
 msgstr ""
 
-#: functions.php:91
+#: functions.php:111
 msgid "Horse"
 msgstr ""
 
-#: functions.php:92
+#: functions.php:112
 msgid "Add New"
 msgstr ""
 
-#: functions.php:93
+#: functions.php:113
 msgid "Add New Horse"
 msgstr ""
 
-#: functions.php:94
+#: functions.php:114
 msgid "Edit Horse"
 msgstr ""
 
@@ -136,23 +145,27 @@ msgstr ""
 msgid "Our Horses"
 msgstr ""
 
-#: include/horse.php:12 single-fso-horses.php:48
+#: include/horse.php:13 single-fso-horses.php:29
 msgid "Year: "
 msgstr ""
 
-#: include/horse.php:13 single-fso-horses.php:49
+#: include/horse.php:14 single-fso-horses.php:31
+msgid "Gender: "
+msgstr ""
+
+#: include/horse.php:15 single-fso-horses.php:30
 msgid "Height: "
 msgstr ""
 
-#: include/horse.php:14 single-fso-horses.php:50
+#: include/horse.php:16 single-fso-horses.php:32
 msgid "Discipline: "
 msgstr ""
 
-#: include/horse.php:15 single-fso-horses.php:51
+#: include/horse.php:17 single-fso-horses.php:33
 msgid "Level: "
 msgstr ""
 
-#: include/horse.php:18 include/latest-news.php:26 news-page.php:47
+#: include/horse.php:20 include/latest-news.php:26
 msgid "Read More"
 msgstr ""
 
@@ -160,34 +173,46 @@ msgstr ""
 msgid "Ouups! No latest news was found..."
 msgstr ""
 
-#: index.php:21 news-page.php:56 page.php:12 single-fso-horses.php:68
-#: single.php:32
+#: index.php:21 news-page.php:50 page.php:12 single-fso-horses.php:50
+#: single.php:33
 msgid "Ouups! Nothing found here!"
 msgstr ""
 
-#: index.php:23 page.php:14 single-fso-horses.php:70 single.php:34
+#: index.php:23 page.php:14 single-fso-horses.php:52 single.php:35
 msgid ""
 "I screwed up and you discovered my fatal flaw. Well, we're not all perfect, "
 "but we try.  Can you try this again or maybe visit our "
 msgstr ""
 
-#: index.php:24 page.php:15 single-fso-horses.php:71 single.php:35
+#: index.php:24 page.php:15 single-fso-horses.php:53 single.php:36
 msgid "Home Page"
 msgstr ""
 
-#: index.php:25 page.php:16 single-fso-horses.php:72 single.php:36
+#: index.php:25 page.php:16 single-fso-horses.php:54 single.php:37
 msgid " to start fresh.  We'll do better next time."
 msgstr ""
 
-#: news-page.php:23 news-page.php:46 single.php:28
+#: news-page.php:30 single.php:29
 msgid "Categories:"
 msgstr ""
 
-#: news-page.php:63 single.php:45
+#: news-page.php:31
+msgid "Read More "
+msgstr ""
+
+#: news-page.php:40
+msgid "Older Entries &raquo;"
+msgstr ""
+
+#: news-page.php:43
+msgid "&laquo; Newer Entries"
+msgstr ""
+
+#: news-page.php:57 single.php:46
 msgid "News"
 msgstr ""
 
-#: page-horses.php:39
+#: page-horses.php:39 page-our-horses.php:28 page-sale-horses.php:27
 msgid "No Posts"
 msgstr ""
 
@@ -195,11 +220,12 @@ msgstr ""
 msgid "Our horses"
 msgstr ""
 
-#: page-horses.php:49 page-horses.php:59
+#: page-horses.php:49 page-horses.php:59 page-our-horses.php:36
+#: page-sale-horses.php:37
 msgid "No horses at the moment..."
 msgstr ""
 
-#: page-horses.php:53
+#: page-horses.php:53 page-sale-horses.php:31
 msgid "Horses for sale"
 msgstr ""
 
