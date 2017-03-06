@@ -15,10 +15,13 @@ function fso_enqueue_scripts() {
   wp_enqueue_script('bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js', array( 'jquery' ));
   wp_enqueue_script( 'scrollreveal', get_stylesheet_directory_uri() . '/js/scrollreveal.min.js', array( 'jquery' ));
   wp_enqueue_script( 'script', get_stylesheet_directory_uri() . '/js/script.js', array( 'jquery', 'scrollreveal' ));
+  wp_enqueue_script( 'fancybox-js', get_stylesheet_directory_uri() . '/js/fancybox/source/jquery.fancybox.pack.js?v=2.1.6', array( 'jquery' ));
+
   //Enqueue Styles
   wp_enqueue_style('bootstrap', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css');
   wp_enqueue_style('fontawesome_css', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   wp_enqueue_style('google-font', 'https://fonts.googleapis.com/css?family=Oswald|Roboto');
+  wp_enqueue_style( 'fancybox-css', get_stylesheet_directory_uri() . '/js/fancybox/source/jquery.fancybox.css?v=2.1.6');
   wp_enqueue_style('style', get_stylesheet_uri());
 }
 add_action( 'wp_enqueue_scripts', 'fso_enqueue_scripts' );
@@ -59,7 +62,24 @@ function fso_widgets_init() {
     'before_title'  => '<h2 class="widget-title">',
     'after_title'   => '</h2>',
   ) );
-
+  register_sidebar( array(
+    'name' => __( 'Our Horses Sidebar', 'fso-eventing' ),
+    'id' => 'our-horses-sidebar',
+    'description' => __( 'Widget area.', 'fso-eventing' ),
+    'before_widget' => '<li id="%1$s" class="widget %2$s ">',
+    'after_widget'  => '</li>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ) );
+  register_sidebar( array(
+    'name' => __( 'Sale Horses Sidebar', 'fso-eventing' ),
+    'id' => 'sale-horses-sidebar',
+    'description' => __( 'Widget area.', 'fso-eventing' ),
+    'before_widget' => '<li id="%1$s" class="widget %2$s ">',
+    'after_widget'  => '</li>',
+    'before_title'  => '<h2 class="widget-title">',
+    'after_title'   => '</h2>',
+  ) );
   register_sidebar( array(
     'name' => __( 'Bottom Start Page', 'fso-eventing' ),
     'id' => 'bottom-start',

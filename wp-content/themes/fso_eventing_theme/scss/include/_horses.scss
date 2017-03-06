@@ -1,3 +1,7 @@
+.horse-breed{
+  color: #777;
+  font-style: italic;
+}
 .horse-tags {
 
   p {
@@ -8,6 +12,9 @@
   }
 }
 .horse-tag {
+  margin-bottom: 3px;
+}
+.horse-tag-title {
   color: $main-color;
 }
 .horse-images {
@@ -27,7 +34,7 @@
 @media all and (min-width: $screen-xs) {
   .horse-sm {
     .content {
-      padding-top: 25px;
+      padding-top: 5px;
       padding-left: 20px;
     }
   }
