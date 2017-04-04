@@ -14,6 +14,7 @@
 					<?php dynamic_sidebar( 'footer-wigets' ); ?>
 				</div>
 			<?php endif; ?>
+			<?php wp_footer(); ?>
 		</footer>
 		<div class="copyright">
 			<p><i> &copy; Copyright 2017</i></p>

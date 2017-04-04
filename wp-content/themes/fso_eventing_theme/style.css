@@ -91,6 +91,17 @@ a {
 .vc_icon_element-icon:hover {
   color: #883939 !important; }
 
+#cff.cff-half-layout .cff-text-wrapper {
+  width: 57%; }
+
+#cff.cff-half-layout .cff-photo,
+#cff.cff-half-layout .cff-iframe-wrap,
+#cff.cff-half-layout .cff-html5-video,
+#cff.cff-half-layout .cff-vidLink {
+  overflow: hidden;
+  width: 40%;
+  max-height: 300px; }
+
 /* The animation code */
 @keyframes example {
   from {
