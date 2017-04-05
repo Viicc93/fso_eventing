@@ -35,6 +35,7 @@ $(document).ready(function(){
 		window.sr = ScrollReveal();
 		sr.reveal('.post, .hero-post',  animationReveal);
 		sr.reveal('.fso-animation', animationReveal);
+		sr.reveal('.cff-item', animationReveal);
 
 
 

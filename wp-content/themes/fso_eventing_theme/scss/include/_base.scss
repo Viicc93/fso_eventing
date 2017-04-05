@@ -13,6 +13,8 @@ body {
 }
 .main-content {
 	overflow: auto;
+	padding-left: 2%;
+	padding-right: 2%;
 }
 #searchform {
 	#searchsubmit {
@@ -48,15 +50,49 @@ body {
 	color: $secondary-color !important;
 }
 
-#cff.cff-half-layout .cff-text-wrapper {
-    width: 57%;
+.cff-item {
+	border-bottom: 1px solid #eee !important;
+}
+@media all and (min-width: $screen-xs) {
+	#cff.cff-half-layout .cff-photo,
+	#cff.cff-half-layout .cff-iframe-wrap,
+	#cff.cff-half-layout .cff-html5-video,
+	#cff.cff-half-layout .cff-vidLink{
+		overflow: hidden;
+		max-height: 200px;
+	}
+}
+@media all and (min-width: $screen-sm) {
+	.main-content {
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+
+	#cff.cff-half-layout .cff-text-wrapper {
+	    width: 67%;
+	}
+
+	#cff.cff-half-layout .cff-photo,
+	#cff.cff-half-layout .cff-iframe-wrap,
+	#cff.cff-half-layout .cff-html5-video,
+	#cff.cff-half-layout .cff-vidLink{
+		overflow: hidden;
+		width: 30%;
+		max-height: 200px;
+	}
 }
 
-#cff.cff-half-layout .cff-photo,
-#cff.cff-half-layout .cff-iframe-wrap,
-#cff.cff-half-layout .cff-html5-video,
-#cff.cff-half-layout .cff-vidLink{
-	overflow: hidden;
-	width: 40%;
-	max-height: 300px;
+@media all and (max-width: $screen-xs) {
+	#cff.cff-half-layout .cff-text-wrapper {
+	    width: 100%;
+	}
+
+	#cff.cff-half-layout .cff-photo,
+	#cff.cff-half-layout .cff-iframe-wrap,
+	#cff.cff-half-layout .cff-html5-video,
+	#cff.cff-half-layout .cff-vidLink{
+		overflow: hidden;
+		width: 100%;
+		max-height: 200px;
+	}
 }

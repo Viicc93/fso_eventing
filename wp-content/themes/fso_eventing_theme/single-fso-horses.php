@@ -17,7 +17,7 @@
 
 		<button class="fso-button" value="" onclick="history.back(-1)" /><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
 
-			<article class="horse h-entry panel">
+			<article class="horse h-entry ">
 				<?php if (has_post_thumbnail()): ?>
 					<div class="thumbnail u-photo single-img  <?php echo  $image_size; ?>">
 						<img class="u-photo" src="<?php the_post_thumbnail_url(); ?>"></img>

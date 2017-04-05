@@ -5,8 +5,8 @@
 
 <div class="main-content">
 	<?php if ( $allPosts->have_posts() ) : ?>
-		<article class="fso-page panel">
-			<h1 class="p-name"><?php the_title(); ?></h1>
+		<article class="fso-page">
+			<h1 class="p-name page-title"><?php the_title(); ?></h1>
 		</article>
 	<section class="posts col-xs-12 col-sm-12 col-md-8 col-lg-8">
 			<?php	while ( $allPosts->have_posts() ) : $allPosts->the_post(); ?>

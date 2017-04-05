@@ -16,7 +16,7 @@
 			<?php endif; ?>
 
 			<button class="fso-button" value="" onclick="history.back(-1)" /><i class="fa fa-arrow-left" aria-hidden="true"></i></button>
-				<article class="h-entry full-post panel">
+				<article class="h-entry full-post">
 					<p class="post-date dt-published"><?php the_date(); ?></p>
 				<?php if (has_post_thumbnail()): ?>
 					<div class="thumbnail single-img <?php echo  $image_size; ?>">
