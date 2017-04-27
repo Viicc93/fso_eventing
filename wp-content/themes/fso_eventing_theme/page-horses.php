@@ -29,25 +29,16 @@
 
 <div class="main-content">
 	<!-- PAGE CONTENT FOR HORSE PAGE -->
-		<?php if ( have_posts() ) : ?>
-			<?php	while ( have_posts() ) : the_post(); ?>
-				<article class="posts col-xs-12 h-entry">
-					<h1 class="p-name page-title"><?php the_title(); ?></h1>
-					<div class="e-content"><?php the_content(); ?></div>
-				</article>
-			<?php endwhile; else : ?>
-				<p><?php _e( 'No Posts' , 'fso-eventing'); ?></p>
-		<?php endif; ?>
 		<div class="posts horses h-entry col-xs-12 col-sm-12 col-md-8 col-lg-8">
-
-			<!-- HORSES -->
-			<h2><?php _e('Our horses', 'fso-eventing'); ?></h2>
-	    <?php if ( $horses->have_posts() ) : ?>
-	  		<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
-					<?php include 'include/horse.php'; ?>
-	  		<?php endwhile; else : ?>
-	  			<p><?php _e( 'No horses at the moment...' , 'fso-eventing'); ?></p>
-	  	<?php endif; ?>
+			<?php if ( have_posts() ) : ?>
+				<?php	while ( have_posts() ) : the_post(); ?>
+					<article class="posts h-entry">
+						<h1 class="p-name page-title"><?php the_title(); ?></h1>
+						<div class="e-content"><?php the_content(); ?></div>
+					</article>
+				<?php endwhile; else : ?>
+					<p><?php _e( 'No Posts' , 'fso-eventing'); ?></p>
+			<?php endif; ?>
 
 				<!-- HORSES FOR SALE -->
 				<h2><?php _e('Horses for sale', 'fso-eventing'); ?></h2>
@@ -59,6 +50,16 @@
 							<p><?php _e( 'No horses at the moment...' , 'fso-eventing'); ?></p>
 						</div>
 				<?php endif; ?>
+
+				<!-- OUR HORSES -->
+				<h2><?php _e('Our horses', 'fso-eventing'); ?></h2>
+				<?php if ( $horses->have_posts() ) : ?>
+					<?php	while ( $horses->have_posts() ) : $horses->the_post(); ?>
+						<?php include 'include/horse.php'; ?>
+					<?php endwhile; else : ?>
+						<p><?php _e( 'No horses at the moment...' , 'fso-eventing'); ?></p>
+				<?php endif; ?>
+
 	  </div>
 
 		<aside id="horses-sidebar" class="sidebar col-xs-12 col-sm-12 col-md-4 col-lg-4">
