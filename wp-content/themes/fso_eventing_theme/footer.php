@@ -17,7 +17,7 @@
 			<?php wp_footer(); ?>
 		</footer>
 		<div class="copyright">
-			<p><i> &copy; Copyright 2017</i></p>
+			<p><i> &copy; 2017 Ostholt Eventing || Made by <a href="http://victoria-johansson.com">Victoria Johansson</a></i></p>
 		</div>
 	</div>
 </body>
