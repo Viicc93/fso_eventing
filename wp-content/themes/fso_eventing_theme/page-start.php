@@ -12,6 +12,7 @@
 			</article>
   	<?php endwhile;?>
 	<?php endif; ?>
+</div>
   	<?php	while ( have_posts() ) : the_post(); ?>
       <div class="image-link" style="background-image: url('<?php the_field('image_link_background'); ?>');">
         <a href="<?php the_field('image_link_url');?>"><a href="<?php the_field('image_link_url');?>"><h1><?php the_field('image_link_text');?></a></h1>
@@ -24,6 +25,5 @@
 			</ul>
 		</div>
 		<?php endif; ?>
-</div>
 
 <?php get_footer(); ?>
